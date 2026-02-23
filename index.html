@@ -8,7 +8,7 @@
     <meta name="keywords" content="سنگ طبیعی, اسلب سنگ, مرمر, گرانیت, تراورتن, اونیکس, سنگ ساختمانی, سنگ لوکس, سنگ ایرانی">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Poppins:wght@300;400;600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -52,7 +52,7 @@
         }
 
         [dir="ltr"] body {
-            font-family: 'Poppins', sans-serif;
+            font-family: 'Inter', 'Poppins', sans-serif;
         }
 
         /* Header Styles */
@@ -122,18 +122,26 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 2.3rem;
+            gap: 2rem;
             transition: var(--transition);
             flex-wrap: nowrap;
         }
 
         html[lang="fa"] .nav-links {
-            gap: 1.45rem;
+            gap: 1.35rem;
         }
 
         html[lang="fa"] .nav-links a {
-            font-size: 1rem;
+            font-size: 0.98rem;
             letter-spacing: 0;
+        }
+
+        html[lang="en"] .nav-links a {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.98rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            text-transform: none;
         }
 
         .nav-links a {
@@ -286,7 +294,7 @@
         }
 
         html[lang="en"] .nav-links {
-            gap: 2rem;
+            gap: 1.2rem;
         }
 
         /* Rest of your existing styles remain the same */
@@ -309,18 +317,26 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 2.3rem;
+            gap: 2rem;
             transition: var(--transition);
             flex-wrap: nowrap;
         }
 
         html[lang="fa"] .nav-links {
-            gap: 1.45rem;
+            gap: 1.35rem;
         }
 
         html[lang="fa"] .nav-links a {
-            font-size: 1rem;
+            font-size: 0.98rem;
             letter-spacing: 0;
+        }
+
+        html[lang="en"] .nav-links a {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.98rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            text-transform: none;
         }
 
         .nav-links a {
@@ -742,7 +758,7 @@
             justify-content: center;
             font-size: 34px;
             box-shadow: 0 10px 30px rgba(37,211,102,0.5);
-            z-index: 999;
+            z-index: 1001;
             animation: float 3s ease-in-out infinite;
             transition: var(--transition);
         }
@@ -832,22 +848,52 @@
                 display: block;
             }
 
+            .menu-backdrop {
+                position: fixed;
+                inset: 0;
+                background: rgba(0, 0, 0, 0.4);
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: var(--transition);
+                z-index: 1000;
+            }
+
+            .menu-backdrop.active {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+
             .nav-links {
                 position: fixed;
                 top: 0;
                 right: -100%;
-                width: 320px;
+                width: min(86vw, 340px);
                 height: 100vh;
                 background: rgba(0,0,0,0.98);
                 flex-direction: column;
-                justify-content: center;
-                padding: 100px 40px;
-                gap: 2.5rem;
+                justify-content: flex-start;
+                padding: 96px 28px 30px;
+                gap: 1.15rem;
                 transition: var(--transition);
             }
 
             .nav-links.active {
                 right: 0;
+                z-index: 1001;
+            }
+
+            .nav-links a {
+                width: 100%;
+                font-size: 1.04rem;
+                font-family: 'Inter', 'Vazirmatn', sans-serif;
+                padding: 0.35rem 0;
+            }
+
+            .lang-switch {
+                margin-top: 0.8rem;
+                align-self: flex-start;
             }
 
             .hero h1 {
@@ -1094,7 +1140,15 @@
 @media (max-width: 768px) {
     #about .about-grid {
         grid-template-columns: 1fr !important;
-        gap: 2rem !important;
+        gap: 1.35rem !important;
+    }
+
+    #about .about-grid > div:first-child {
+        order: 2;
+    }
+
+    #about .about-grid > div:last-child {
+        order: 1;
     }
 
     #about img {
@@ -1104,14 +1158,16 @@
     }
 
     #about p {
-        font-size: 1rem;
-        line-height: 1.9;
+        font-size: 0.98rem;
+        line-height: 2;
         word-wrap: break-word;
+        text-align: justify;
     }
 
     #about .stats {
-        flex-direction: column;
-        gap: 1.8rem;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        gap: 1rem;
     }
 
     #about .stat-number {
@@ -1162,6 +1218,7 @@
             </div>
         </div>
     </header>
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -1194,7 +1251,7 @@
                    data-ar="إحسان ستون - رائد في صناعة الحجر الطبيعي مع أكثر من عقدين من الخبرة"></p>
             </div>
 
-            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
+            <div class="grid about-grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
                 <div data-aos="fade-right">
                     <img src="about-image.jpg" alt="درباره سنگ احسان" >
                 </div>
@@ -1242,14 +1299,13 @@
                     <img src="team-member1.jpg" alt="صمد کوشکی">
                     <h3 class="lang-text" data-fa="حاج صمد کوشکی" data-en="haj samad kooski" data-ar="السید ابدلصمد کوشکی"></h3>
                     <p class="lang-text" data-fa="رئيس هیت مدیره" data-en="CEO" data-ar="المدير التنفيذي"></p>
-                   <!--- <p class="lang-text" data-fa="بیش از 30 سال تجربه در صنعت سنگ" data-en="Over 30 years experience in stone industry" data-ar="أكثر من 30 عامًا من الخبرة في صناعة الحجر"></p>-->
+                   <p class="lang-text" data-fa="با ۴۰ سال تجربه در صنعت سنگ و ساختمان" data-en="With 40 years of experience in the stone and construction industry" data-ar="بخبرة 40 عامًا في صناعة الحجر والبناء"></p>
                 </div>
                 <div class="team-member glass-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="team-member2.jpg" alt="احسان کوشکی مدیر عامل">
-                    <h3 class="lang-text" data-fa="حاج احسان کوشکی" data-en="mr.ehsan kooshki" data-ar="المهندس  احسان کوشکی"></h3>
-                    <p class="lang-text" data-fa="مدیر عامل" data-en="CEO" data-ar="المدير التنفيذي"></p>
-                    <p class="lang-text" data-fa="بیش از 20 سال تجربه در صنعت سنگ" data-en="Over 20 years experience in stone industry" data-ar="أكثر من 20 عامًا من الخبرة في صناعة الحجر"></p>
-                </div>
+                    <h3 class="lang-text" data-fa="مهندس احسان کوشکی" data-en="Eng. Ehsan Kooshki" data-ar="المهندس  احسان کوشکی"></h3>
+                    <p class="lang-text" data-fa="نایب رئیس و مدیر عامل" data-en="Vice Chairman & CEO" data-ar="نائب الرئيس والمدير التنفيذي"></p>
+                                    </div>
               <!---  <div class="team-member glass-card" data-aos="fade-up" data-aos-delay="200">
                     <img src="team-member3.jpg" alt="مهندس کریمی - مدیر تولید">
                     <h3 class="lang-text" data-fa="مهندس کریمی" data-en="Eng. Karimi" data-ar="المهندس كريمي"></h3>
@@ -1896,18 +1952,35 @@
         });
 
         // Mobile Menu Toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-links');
+        const menuBackdrop = document.getElementById('menuBackdrop');
 
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-links').classList.remove('active');
-                document.body.classList.remove('menu-open');
+        function closeMobileMenu() {
+            navMenu.classList.remove('active');
+            menuBackdrop.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+
+        if (mobileMenuBtn && navMenu && menuBackdrop) {
+            mobileMenuBtn.addEventListener('click', () => {
+                const open = navMenu.classList.toggle('active');
+                menuBackdrop.classList.toggle('active', open);
+                document.body.classList.toggle('menu-open', open);
             });
-        });
+
+            menuBackdrop.addEventListener('click', closeMobileMenu);
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 992) {
+                    closeMobileMenu();
+                }
+            });
+        }
 
         // Language Switcher - Fixed for English layout
         const savedLang = localStorage.getItem('lang') || 'fa';
