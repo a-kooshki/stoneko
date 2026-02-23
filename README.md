@@ -21,4 +21,9 @@
 
 ### فونت سفارشی (از فایل ZIP)
 - فایل زیپ فونت را در مسیر `fonts/` اکسترکت کنید.
-- نام فایل‌ها را به `ehsan-font.woff2` یا `ehsan-font.ttf` بگذارید تا به‌صورت خودکار در سایت اعمال شود.
+- برای فونت اصلی سایت یکی از این نام‌ها را بگذارید:
+  - `fonts/ehsan-font.woff2` یا `fonts/ehsan-font.ttf`
+- برای متن کنار لوگو (`EHSANSTONE`) دو فونت مجزا تعریف شده است:
+  - فونت فارسی لوگو: `fonts/ehsanstone-fa.woff2` یا `fonts/ehsanstone-fa.ttf`
+  - فونت انگلیسی لوگو: `fonts/ehsanstone-en.woff2` یا `fonts/ehsanstone-en.ttf`
+- اگر این فایل‌ها موجود نباشند، سایت خودکار از فونت‌های جایگزین (`Vazirmatn` و `Inter`) استفاده می‌کند.
