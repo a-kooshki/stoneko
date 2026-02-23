@@ -25,6 +25,16 @@
     <meta itemprop="image" content="https://ehsnestone.com/images/og-image.jpg">
 
     <style>
+
+        @font-face {
+            font-family: 'EhsanLocal';
+            src: url('fonts/ehsan-font.woff2') format('woff2'),
+                 url('fonts/ehsan-font.ttf') format('truetype');
+            font-weight: 300 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
         :root {
             --primary: #0089a7;
             --primary-dark: #006f8a;
@@ -43,7 +53,7 @@
         }
 
         body {
-            font-family: 'Vazirmatn', sans-serif;
+            font-family: 'EhsanLocal', 'Vazirmatn', sans-serif;
             background: var(--dark);
             color: var(--text);
             line-height: 1.8;
@@ -52,7 +62,7 @@
         }
 
         [dir="ltr"] body {
-            font-family: 'Inter', 'Poppins', sans-serif;
+            font-family: 'EhsanLocal', 'Inter', 'Poppins', sans-serif;
         }
 
         /* Header Styles */
@@ -844,6 +854,10 @@
         }
 
         @media (max-width: 992px) {
+            header {
+                z-index: 1004;
+            }
+
             .mobile-menu-btn {
                 display: block;
             }
@@ -851,12 +865,14 @@
             .menu-backdrop {
                 position: fixed;
                 inset: 0;
-                background: rgba(0, 0, 0, 0.4);
+                background: radial-gradient(circle at 20% 10%, rgba(255,255,255,0.14), rgba(0,0,0,0.55));
+                backdrop-filter: blur(6px);
+                -webkit-backdrop-filter: blur(6px);
                 opacity: 0;
                 visibility: hidden;
                 pointer-events: none;
                 transition: var(--transition);
-                z-index: 1000;
+                z-index: 1001;
             }
 
             .menu-backdrop.active {
@@ -867,28 +883,46 @@
 
             .nav-links {
                 position: fixed;
-                top: 0;
-                right: -100%;
+                top: 12px;
+                right: 12px;
                 width: min(86vw, 340px);
-                height: 100vh;
-                background: rgba(0,0,0,0.98);
+                height: calc(100vh - 24px);
+                background: linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.05));
+                border: 1px solid rgba(255, 255, 255, 0.22);
+                border-radius: 22px;
+                box-shadow: 0 18px 45px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+                backdrop-filter: blur(20px) saturate(160%);
+                -webkit-backdrop-filter: blur(20px) saturate(160%);
                 flex-direction: column;
                 justify-content: flex-start;
-                padding: 96px 28px 30px;
-                gap: 1.15rem;
-                transition: var(--transition);
+                padding: 88px 22px 24px;
+                gap: 0.85rem;
+                overflow-y: auto;
+                transform: translateX(110%);
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: transform .35s ease, opacity .25s ease, visibility .25s ease;
             }
 
             .nav-links.active {
-                right: 0;
-                z-index: 1001;
+                transform: translateX(0);
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                z-index: 1005;
             }
 
             .nav-links a {
                 width: 100%;
-                font-size: 1.04rem;
-                font-family: 'Inter', 'Vazirmatn', sans-serif;
-                padding: 0.35rem 0;
+                font-size: 1.02rem;
+                font-family: 'EhsanLocal', 'Inter', 'Vazirmatn', sans-serif;
+                padding: 0.5rem 0.4rem;
+                border-radius: 12px;
+            }
+
+            .nav-links a:active {
+                background: rgba(255,255,255,0.12);
             }
 
             .lang-switch {
@@ -1166,8 +1200,18 @@
 
     #about .stats {
         display: grid;
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
-        gap: 1rem;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.65rem;
+        align-items: start;
+    }
+
+    #about .stat {
+        min-width: 0;
+    }
+
+    #about .stat-text {
+        font-size: 0.78rem;
+        line-height: 1.5;
     }
 
     #about .stat-number {
@@ -1963,13 +2007,18 @@
         }
 
         if (mobileMenuBtn && navMenu && menuBackdrop) {
-            mobileMenuBtn.addEventListener('click', () => {
+            mobileMenuBtn.addEventListener('click', (event) => {
+                event.stopPropagation();
                 const open = navMenu.classList.toggle('active');
                 menuBackdrop.classList.toggle('active', open);
                 document.body.classList.toggle('menu-open', open);
             });
 
             menuBackdrop.addEventListener('click', closeMobileMenu);
+
+            navMenu.addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
 
             document.querySelectorAll('.nav-links a').forEach(link => {
                 link.addEventListener('click', closeMobileMenu);
