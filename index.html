@@ -27,28 +27,19 @@
     <style>
 
         @font-face {
-            font-family: 'EhsanLocal';
-            src: url('fonts/ehsan-font.woff2') format('woff2'),
-                 url('fonts/ehsan-font.ttf') format('truetype');
+            font-family: 'IranYekanCustom';
+            src: url('fonts/iranyekan.woff2') format('woff2'),
+                 url('fonts/iranyekan.ttf') format('truetype');
             font-weight: 300 900;
             font-style: normal;
             font-display: swap;
         }
 
         @font-face {
-            font-family: 'EhsanLogoFa';
-            src: url('fonts/ehsanstone-fa.woff2') format('woff2'),
-                 url('fonts/ehsanstone-fa.ttf') format('truetype');
-            font-weight: 400 900;
-            font-style: normal;
-            font-display: swap;
-        }
-
-        @font-face {
-            font-family: 'EhsanLogoEn';
-            src: url('fonts/ehsanstone-en.woff2') format('woff2'),
-                 url('fonts/ehsanstone-en.ttf') format('truetype');
-            font-weight: 400 900;
+            font-family: 'AvenirCustom';
+            src: url('fonts/avenir.woff2') format('woff2'),
+                 url('fonts/avenir.ttf') format('truetype');
+            font-weight: 300 900;
             font-style: normal;
             font-display: swap;
         }
@@ -71,7 +62,7 @@
         }
 
         body {
-            font-family: 'EhsanLocal', 'Vazirmatn', sans-serif;
+            font-family: 'IranYekanCustom', 'Vazirmatn', sans-serif;
             background: var(--dark);
             color: var(--text);
             line-height: 1.8;
@@ -79,8 +70,13 @@
             transition: var(--transition);
         }
 
-        [dir="ltr"] body {
-            font-family: 'EhsanLocal', 'Inter', 'Poppins', sans-serif;
+        html[lang="fa"] body,
+        html[lang="ar"] body {
+            font-family: 'IranYekanCustom', 'Vazirmatn', sans-serif;
+        }
+
+        html[lang="en"] body {
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
         }
 
         /* Header Styles */
@@ -136,14 +132,14 @@
         }
 
         .logo-text-fa {
-            font-family: 'EhsanLogoFa', 'Vazirmatn', sans-serif;
+            font-family: 'IranYekanCustom', 'Vazirmatn', sans-serif;
             font-weight: 700;
             font-size: 1rem;
             letter-spacing: 0;
         }
 
         .logo-text-en {
-            font-family: 'EhsanLogoEn', 'Inter', sans-serif;
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
             font-weight: 700;
             font-size: 1.28rem;
             letter-spacing: 0.03em;
@@ -181,7 +177,7 @@
         }
 
         html[lang="en"] .nav-links a {
-            font-family: 'Inter', sans-serif;
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
             font-size: 0.98rem;
             font-weight: 500;
             letter-spacing: 0.01em;
@@ -376,7 +372,7 @@
         }
 
         html[lang="en"] .nav-links a {
-            font-family: 'Inter', sans-serif;
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
             font-size: 0.98rem;
             font-weight: 500;
             letter-spacing: 0.01em;
@@ -950,7 +946,7 @@
             .nav-links a {
                 width: 100%;
                 font-size: 1.02rem;
-                font-family: 'EhsanLocal', 'Inter', 'Vazirmatn', sans-serif;
+                font-family: 'AvenirCustom', 'Inter', sans-serif;
                 padding: 0.5rem 0.4rem;
                 border-radius: 12px;
             }
@@ -1072,7 +1068,7 @@
             right: 20px;
             font-size: 5rem;
             color: var(--primary);
-            font-family: 'Poppins', sans-serif;
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
         }
 
         .author {
