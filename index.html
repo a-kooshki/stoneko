@@ -1,0 +1,2060 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ehsnestone | Luxury Natural Stone Slabs</title>
+    <meta name="description" content="Ehsnestone - تولید و صادرات اسلب سنگ طبیعی لوکس | مرمر، گرانیت، تراورتن، اونیکس">
+    <meta name="keywords" content="سنگ طبیعی, اسلب سنگ, مرمر, گرانیت, تراورتن, اونیکس, سنگ ساختمانی, سنگ لوکس, سنگ ایرانی">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Feather Icons -->
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Schema.org markup for Google -->
+    <meta itemprop="name" content="Ehsnestone - تولید و صادرات اسلب سنگ طبیعی لوکس">
+    <meta itemprop="description" content="Ehsnestone ارائه دهنده سنگ‌های طبیعی لوکس با کیفیت برتر برای پروژه‌های بین‌المللی">
+    <meta itemprop="image" content="https://ehsnestone.com/images/og-image.jpg">
+
+    <style>
+        :root {
+            --primary: #0089a7;
+            --primary-dark: #006f8a;
+            --dark: #0a0a0a;
+            --glass: rgba(15, 15, 15, 0.7);
+            --glass-border: rgba(0, 137, 167, 0.2);
+            --text: #e0e0e0;
+            --text-secondary: #aaa;
+            --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+        }
+
+        *, *::before, *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Vazirmatn', sans-serif;
+            background: var(--dark);
+            color: var(--text);
+            line-height: 1.8;
+            overflow-x: hidden;
+            transition: var(--transition);
+        }
+
+        [dir="ltr"] body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem 5%;
+            background-color: rgba(0, 0, 0, 0.329);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo-icon {
+            width: 65px;
+            height: 65px;
+            
+            border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 900;
+            font-size: 1.5rem;
+            color: var(--primary);
+            text-shadow: 0 2px 4px rgba(0, 137, 167, 0.3);
+        }
+
+     
+
+        /* Mobile Menu Button */
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 3.5rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a {
+            color: white;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            padding-bottom: 5px;
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .lang-switch {
+            display: flex;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50px;
+            padding: 6px;
+            backdrop-filter: blur(10px);
+            margin-left: 1rem;
+        }
+
+        .lang-switch button {
+            padding: 8px 18px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .lang-switch button.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Timeline Section */
+        .timeline {
+            position: relative;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: var(--primary);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 4px;
+        }
+
+        .timeline-item {
+            padding: 2rem;
+            position: relative;
+            width: 50%;
+            box-sizing: border-box;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: var(--dark);
+            border: 4px solid var(--primary);
+            border-radius: 50%;
+            top: 2rem;
+            z-index: 1;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+
+        .timeline-item:nth-child(odd)::after {
+            right: -10px;
+        }
+
+        .timeline-content {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2rem;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .timeline-year {
+            position: absolute;
+            top: -1rem;
+            right: 2rem;
+            background: var(--primary);
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        .timeline-item:nth-child(even) .timeline-year {
+            right: auto;
+            left: 2rem;
+        }
+
+        /* Language Switch Fix for English */
+        [dir="ltr"] .lang-switch {
+            margin-right: 1rem;
+            margin-left: 0;
+        }
+
+        [dir="ltr"] .nav-links {
+            gap: 2rem;
+        }
+
+        /* Rest of your existing styles remain the same */
+        #particles-bg {
+            position: fixed;
+            inset: 0;
+            z-index: -2;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1001;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 3.5rem;
+            transition: var(--transition);
+        }
+
+        .nav-links a {
+            color: white;
+            font-weight: 500;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            position: relative;
+            padding-bottom: 5px;
+            text-decoration: none !important;
+
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary);
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
+
+        .lang-switch {
+            display: flex;
+            background: rgba(255,255,255,0.08);
+            border-radius: 50px;
+            padding: 6px;
+            backdrop-filter: blur(10px);
+            margin-left: 1rem;
+        }
+
+        .lang-switch button {
+            padding: 8px 18px;
+            border: none;
+            background: transparent;
+            color: var(--text-secondary);
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+            min-width: 40px;
+            text-align: center;
+        }
+
+        .lang-switch button.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            min-height: 600px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(0,0,0,0.85), rgba(0,137,167,0.1));
+            z-index: 0;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 1000px;
+            padding: 0 2rem;
+        }
+
+        .hero h1 {
+            font-size: 6rem;
+            font-weight: 900;
+            color: white;
+            margin-bottom: 1.5rem;
+            letter-spacing: -2px;
+            background: linear-gradient(90deg, #ffffff, #00b4d8);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+         
+
+        .hero p {
+                    font-size: 1.7rem;
+                  
+                    color: white;
+                    margin-bottom: 3rem;
+                    letter-spacing: -2px;
+                    background: linear-gradient(90deg, #ffffff, #00b4d8);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    color: transparent;
+                    opacity: 0.95;
+                }
+
+
+      /*  .hero p {
+            font-size: 1.7rem;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            line-height: 1.6;
+           
+        }   
+*/
+        .divider {
+            width: 100px;
+            height: 5px;
+            background: var(--primary);
+            margin: 2.5rem auto;
+            border-radius: 3px;
+            box-shadow: 0 0 15px var(--primary);
+        }
+
+        /* Sections */
+        section {
+            padding: 140px 5% 100px;
+            position: relative;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 90px;
+        }
+
+        .section-title h2 {
+            font-size: 3.8rem;
+            font-weight: 800;
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .section-title h2 span {
+            color: var(--primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-secondary);
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+            gap: 2.5rem;
+            margin-top: 3rem;
+        }
+
+        /* Glass Card */
+        .glass-card {
+            background: var(--glass);
+            backdrop-filter: blur(20px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 2.8rem;
+            transition: var(--transition);
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .glass-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, transparent, var(--primary), transparent);
+            transform: scaleX(0);
+            transition: var(--transition);
+        }
+
+        .glass-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .glass-card:hover {
+            transform: translateY(-20px);
+            border-color: var(--primary);
+            box-shadow: 0 25px 50px rgba(0,137,167,0.2);
+        }
+
+        .glass-card img {
+            border-radius: 12px;
+            margin-bottom: 1.5rem;
+            height: 280px;
+            width: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+            filter: grayscale(10%);
+        }
+
+        .glass-card:hover img {
+            filter: grayscale(0%);
+            transform: scale(1.02);
+        }
+
+        .process-item i {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        /* Team Section */
+        .team-member {
+            text-align: center;
+            position: relative;
+        }
+
+        .team-member img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 0 auto 1.5rem;
+            border: 4px solid var(--primary);
+            transition: var(--transition);
+        }
+
+        .team-member:hover img {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 137, 167, 0.3);
+        }
+
+        .team-member h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+
+        .team-member p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Clients Section */
+        .clients-section {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 80px 5%;
+        }
+
+        .clients-title {
+            text-align: center;
+            margin-bottom: 3rem;
+            color: var(--text-secondary);
+            font-size: 1.4rem;
+        }
+
+        .embla {
+            overflow: hidden;
+            width: 90%;
+            margin: auto;
+            position: relative;
+        }
+
+        .embla__viewport {
+            overflow: hidden;
+        }
+
+        .embla__container {
+            display: flex;
+            gap: 30px;
+        }
+
+        .embla__slide {
+            flex: 0 0 20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            min-width: 150px;
+        }
+
+        .embla__slide img {
+            max-height: 50px;
+            width: auto;
+            opacity: 0.7;
+            filter: grayscale(100%);
+            transition: var(--transition);
+        }
+
+        .embla__slide:hover img {
+            opacity: 1;
+            filter: grayscale(0%);
+        }
+
+        .fade-left, .fade-right {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 80px;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .fade-left {
+            left: 0;
+            background: linear-gradient(to right, var(--dark), transparent);
+        }
+
+        .fade-right {
+            right: 0;
+            background: linear-gradient(to left, var(--dark), transparent);
+        }
+
+        /* Form Styles */
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1.2rem 1.5rem;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.15);
+            border-radius: 12px;
+            color: white;
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 20px rgba(0,137,167,0.2);
+            background: rgba(255,255,255,0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 1.3rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 12px;
+            font-size: 1.3rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .submit-btn:hover {
+            background: var(--primary-dark);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 137, 167, 0.3);
+        }
+
+        .submit-btn::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+            transition: var(--transition);
+        }
+
+        .submit-btn:hover::after {
+            left: 100%;
+        }
+
+        /* WhatsApp Button */
+        .whatsapp {
+            position: fixed;
+            left: 20px;
+            bottom: 20px;
+            width: 64px;
+            height: 64px;
+            background: #25D366;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 34px;
+            box-shadow: 0 10px 30px rgba(37,211,102,0.5);
+            z-index: 999;
+            animation: float 3s ease-in-out infinite;
+            transition: var(--transition);
+        }
+
+        .whatsapp:hover {
+            transform: scale(1.1);
+            box-shadow: 0 15px 35px rgba(37,211,102,0.7);
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+
+        /* Social Icons */
+        .social {
+            display: flex;
+            gap: 1.5rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .social a {
+            color: var(--text-secondary);
+            font-size: 1.8rem;
+            transition: var(--transition);
+        }
+
+        .social a:hover {
+            color: var(--primary);
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(0, 0, 0, 0.3);
+            padding: 3rem 5% 2rem;
+            text-align: center;
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--primary);
+        }
+
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .grid {
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            }
+
+            .hero h1 {
+                font-size: 5rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .nav-links {
+                position: fixed;
+                top: 0;
+                right: -100%;
+                width: 320px;
+                height: 100vh;
+                background: rgba(0,0,0,0.98);
+                flex-direction: column;
+                justify-content: center;
+                padding: 100px 40px;
+                gap: 2.5rem;
+                transition: var(--transition);
+            }
+
+            .nav-links.active {
+                right: 0;
+            }
+
+            .hero h1 {
+                font-size: 4.5rem;
+            }
+
+            .section-title h2 {
+                font-size: 3rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+
+            #contact .grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .timeline-item {
+                width: 100%;
+                padding-left: 50px;
+                padding-right: 50px;
+            }
+
+            .timeline-item::after {
+                left: 30px !important;
+            }
+
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+
+            .timeline-item:nth-child(even) .timeline-year {
+                right: 2rem;
+                left: auto;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero p {
+                font-size: 1.4rem;
+            }
+
+            .section-title h2 {
+                font-size: 2.6rem;
+            }
+
+            section {
+                padding: 100px 5% 80px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2.8rem;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+            .section-title h2 {
+                font-size: 2.2rem;
+            }
+
+            .whatsapp {
+                width: 56px;
+                height: 56px;
+                font-size: 28px;
+            }
+        }
+
+        /* Product Tags */
+        .product-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 1rem;
+        }
+
+        .tag {
+            background: rgba(0,137,167,0.2);
+            color: var(--primary);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            border: 1px solid var(--primary);
+        }
+
+        /* Testimonial */
+        .testimonial {
+            background: var(--glass);
+            border-left: 4px solid var(--primary);
+            padding: 2rem;
+            margin: 2rem 0;
+            position: relative;
+        }
+
+        .testimonial::before {
+            content: '"';
+            position: absolute;
+            top: -10px;
+            right: 20px;
+            font-size: 5rem;
+            color: var(--primary);
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .author {
+            display: flex;
+            align-items: center;
+            margin-top: 1.5rem;
+            gap: 1rem;
+        }
+
+        .author img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .author-info h4 {
+            color: white;
+            margin-bottom: 0.2rem;
+        }
+
+        .author-info p {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Stats */
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 3rem 0;
+            text-align: center;
+        }
+
+        .stat {
+            padding: 1.5rem;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .stat-text {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Blog Preview */
+        .blog-preview {
+            display: flex;
+            gap: 1.5rem;
+            margin: 2rem 0;
+            padding: 1.5rem;
+            background: var(--glass);
+            border-radius: 12px;
+            transition: var(--transition);
+        }
+
+        .blog-preview:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+
+        .blog-image {
+            flex: 0 0 120px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .blog-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .blog-preview:hover .blog-image img {
+            transform: scale(1.05);
+        }
+
+        .blog-content {
+            flex: 1;
+        }
+
+        .blog-title {
+            color: white;
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            transition: var(--transition);
+        }
+
+        .blog-preview:hover .blog-title {
+            color: var(--primary);
+        }
+
+        .blog-date {
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        .read-more {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .read-more:hover {
+            text-decoration: underline;
+        }
+
+        /* Contact Section Responsive */
+        @media (max-width: 992px) {
+            #contact .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <style>
+
+
+#about .about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+/* Mobile Fix */
+@media (max-width: 768px) {
+    #about .about-grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+
+    #about img {
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+
+    #about p {
+        font-size: 1rem;
+        line-height: 1.9;
+        word-wrap: break-word;
+    }
+
+    #about .stats {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+
+    #about .stat-number {
+        font-size: 2.2rem;
+    }
+}
+
+    </style>
+
+
+
+</head>
+<body>
+    <canvas id="particles-bg"></canvas>
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/989177511967?text=سلام،%20از%20سایت%20Ehsnestone%20پیام%20می‌دم" class="whatsapp" target="_blank" aria-label="واتساپ">
+        <i data-feather="message-circle"></i>
+    </a>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="nav-container">
+            <div class="logo-container">
+                <div class="logo-icon">
+                    <img src="ehsanestone.png" alt="Ehasnestone Logo">
+                </div>
+                <h1 class="logo-text">Ehsanstone</h1>
+            </div>
+            <button class="mobile-menu-btn" aria-label="منو">
+                <i data-feather="menu"></i>
+            </button>
+            <div class="nav-links">
+                <a href="#home"><span class="lang-text" data-fa="خانه" data-en="Home" data-ar="الرئيسية">خانه</span></a>
+                <a href="#about"><span class="lang-text" data-fa="درباره ما" data-en="About" data-ar="عننا">درباره ما</span></a>
+                <a href="#products"><span class="lang-text" data-fa="محصولات" data-en="Products" data-ar="المنتجات">محصولات</span></a>
+                <a href="#process"><span class="lang-text" data-fa="فرآیند" data-en="Process" data-ar="العملية">فرآیند</span></a>
+                <a href="#gallery"><span class="lang-text" data-fa="گالری" data-en="Gallery" data-ar="معرض الصور">گالری</span></a>
+                <a href="#team"><span class="lang-text" data-fa="تیم ما" data-en="Our Team" data-ar="فريقنا">تیم ما</span></a>
+                <a href="#clients"><span class="lang-text" data-fa="مشتریان" data-en="Clients" data-ar="عملائنا">مشتریان</span></a>
+                <a href="#contact"><span class="lang-text" data-fa="تماس" data-en="Contact" data-ar="اتصل">تماس</span></a>
+
+                <div class="lang-switch">
+                    <button class="active" data-lang="fa">FA</button>
+                    <button data-lang="en">EN</button>
+                    <button data-lang="ar">ar</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <video autoplay muted loop playsinline>
+            <source src="ston.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="hero-content">
+          <!-- <h1 class="lang-text" data-fa="Ehsnestone" data-en="Ehsnestone" data-ar="إحسان ستون">Ehsnestone</h1> -->
+            <p class="lang-text" data-fa="تولید و صادرات اسلب سنگ طبیعی لوکس" data-en="Luxury Natural Stone Slabs Manufacturer & Exporter" data-ar="منتج ومصدر ألواح الحجر الطبيعي الفاخر"></p>
+            <div class="divider"></div>
+            <p class="lang-text" data-fa="از معادن برتر ایران تا پروژه‌های بین‌المللی — با دقت، زیبایی، ابدی"
+               data-en="From Iran's finest quarries to international projects — Precision. Beauty. Eternity."
+               data-ar="من أجود محاجر إيران إلى المشاريع العالمية — دقة. جمال. أبدية."></p>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>
+                    <span class="lang-text" data-fa="درباره" data-en="About" data-ar="عن">درباره</span>
+                    <span class="lang-text" data-fa="ما" data-en="Us" data-ar="نا">ما</span>
+                </h2>
+                <div class="divider"></div>
+                <p class="section-subtitle lang-text"
+                   data-fa="سنگ احسان - پیشرو در صنعت سنگ طبیعی با بیش از دو دهه تجربه"
+                   data-en="Ehasnestone - Leader in natural stone industry with over two decades of experience"
+                   data-ar="إحسان ستون - رائد في صناعة الحجر الطبيعي مع أكثر من عقدين من الخبرة"></p>
+            </div>
+
+            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
+                <div data-aos="fade-right">
+                    <img src="about-image.jpg" alt="درباره سنگ احسان" >
+                </div>
+                <div data-aos="fade-left">
+                    <p class="lang-text"
+                       data-fa="شرکت سنگ احسان با بیش از دو دهه تجربه در زمینه استخراج، فراوری و صادرات سنگ‌های طبیعی لوکس، یکی از پیشروان صنعت سنگ ایران است. ما با بهره‌گیری از جدیدترین فناوری‌ها و استانداردهای بین‌المللی، محصولاتی با کیفیت برتر را به بازارهای جهانی عرضه می‌کنیم."
+                       data-en="Ehasnestone Company, with over two decades of experience in extraction, processing and export of luxury natural stones, is one of the leaders in Iran's stone industry. Using the latest technologies and international standards, we offer premium quality products to global markets."
+                       data-ar="شركة إحسان ستون، مع أكثر من عقدين من الخبرة في استخراج ومعالجة وتصدير الأحجار الطبيعية الفاخرة، هي واحدة من الرواد في صناعة الحجر في إيران. باستخدام أحدث التقنيات والمعايير الدولية، نقدم منتجات ذات جودة عالية للأسواق العالمية."></p>
+
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">20+</div>
+                            <div class="stat-text lang-text" data-fa="سال تجربه" data-en="Years Experience" data-ar="سنوات خبرة"></div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-text lang-text" data-fa="کشور صادراتی" data-en="Export Countries" data-ar="دول تصدير"></div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-text lang-text" data-fa="پروژه موفق" data-en="Successful Projects" data-ar="مشاريع ناجحة"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>
+                    <span class="lang-text" data-fa="تیم" data-en="Our" data-ar="فريق">تیم</span>
+                    <span class="lang-text" data-fa="ما" data-en="Team" data-ar="نا">ما</span>
+                </h2>
+                <div class="divider"></div>
+                <p class="section-subtitle lang-text"
+                   data-fa="متخصصان ما با سال‌ها تجربه در صنعت سنگ، کیفیت و نوآوری را تضمین می‌کنند"
+                   data-en="Our experts with years of experience in the stone industry guarantee quality and innovation"
+                   data-ar="خبراؤنا مع سنوات من الخبرة في صناعة الحجر يضمنون الجودة والابتكار"></p>
+            </div>
+            <div class="grid">
+                <div class="team-member glass-card" data-aos="fade-up">
+                    <img src="team-member1.jpg" alt="صمد کوشکی">
+                    <h3 class="lang-text" data-fa="حاج صمد کوشکی" data-en="haj samad kooski" data-ar="السید ابدلصمد کوشکی"></h3>
+                    <p class="lang-text" data-fa="رئيس هیت مدیره" data-en="CEO" data-ar="المدير التنفيذي"></p>
+                   <!--- <p class="lang-text" data-fa="بیش از 30 سال تجربه در صنعت سنگ" data-en="Over 30 years experience in stone industry" data-ar="أكثر من 30 عامًا من الخبرة في صناعة الحجر"></p>-->
+                </div>
+                <div class="team-member glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="team-member2.jpg" alt="احسان کوشکی مدیر عامل">
+                    <h3 class="lang-text" data-fa="حاج احسان کوشکی" data-en="mr.ehsan kooshki" data-ar="المهندس  احسان کوشکی"></h3>
+                    <p class="lang-text" data-fa="مدیر عامل" data-en="CEO" data-ar="المدير التنفيذي"></p>
+                    <p class="lang-text" data-fa="بیش از 20 سال تجربه در صنعت سنگ" data-en="Over 20 years experience in stone industry" data-ar="أكثر من 20 عامًا من الخبرة في صناعة الحجر"></p>
+                </div>
+              <!---  <div class="team-member glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="team-member3.jpg" alt="مهندس کریمی - مدیر تولید">
+                    <h3 class="lang-text" data-fa="مهندس کریمی" data-en="Eng. Karimi" data-ar="المهندس كريمي"></h3>
+                    <p class="lang-text" data-fa="مدیر تولید" data-en="Production Manager" data-ar="مدير الإنتاج"></p>
+                    <p class="lang-text" data-fa="کارشناس کنترل کیفیت" data-en="Quality control expert" data-ar="خبير مراقبة الجودة"></p>
+                </div>-->
+            </div>
+
+            <div class="testimonial" data-aos="fade-up">
+                <p class="lang-text"
+                   data-fa="کیفیت سنگ‌های احسانستون واقعاً استثنایی است. ما برای پروژه هتل پنج ستاره خود در دبی از محصولات آنها استفاده کردیم و نتیجه نهایی فراتر از انتظارمان بود. تیم حرفه‌ای آنها در تمام مراحل با ما همراه بودند."
+                   data-en="The quality of Ehasnestone's stones is truly exceptional. We used their products for our five-star hotel project in Dubai and the final result exceeded our expectations. Their professional team was with us every step of the way."
+                   data-ar="جودة أحجار إحسان ستون استثنائية حقًا. استخدمنا منتجاتهم لمشروع فندق الخمس نجوم لدينا في دبي وكانت النتيجة النهائية تتجاوز توقعاتنا. كان فريقهم المحترف معنا في كل خطوة على الطريق."></p>
+
+                <div class="author">
+                    <img src="client-avatar.jpg" alt="محمدرضا علیپور - مدیر پروژه هتل دبی">
+                    <div class="author-info">
+                        <h4 class="lang-text" data-fa="محمدرضا علیپور" data-en="Mohammad Reza Alipour" data-ar="محمد رضا عليبور"></h4>
+                        <p class="lang-text" data-fa="مدیر پروژه هتل دبی" data-en="Dubai Hotel Project Manager" data-ar="مدير مشروع فندق دبي"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="products">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>
+                    <span class="lang-text" data-fa="محصولات" data-en="Our" data-ar="منتجات">محصولات</span>
+                    <span class="lang-text" data-fa="ما" data-en="Products" data-ar="نا">ما</span>
+                </h2>
+                <div class="divider"></div>
+                <p class="section-subtitle lang-text"
+                   data-fa="طیف گسترده‌ای از سنگ‌های طبیعی با کیفیت برتر برای پروژه‌های شما"
+                   data-en="A wide range of premium natural stones for your projects"
+                   data-ar="مجموعة واسعة من الأحجار الطبيعية عالية الجودة لمشاريعك"></p>
+            </div>
+            <div class="grid">
+                <div class="glass-card" data-aos="fade-up">
+                    <img src="carrara-marble.jpg" alt="مرمر کارارا">
+                    <h3>Carrara Marble</h3>
+                    <p class="lang-text"
+                       data-fa="مرمر ایتالیایی با رگه‌های طوسی ظریف، انتخابی کلاسیک برای فضاهای لوکس"
+                       data-en="Italian marble with delicate gray veins, a classic choice for luxury spaces"
+                       data-ar="رخام إيطالي بريش رمادية رقيقة، اختيار كلاسيكي للمساحات الفاخرة"></p>
+                    <div class="product-tags">
+                        <span class="tag lang-text" data-fa="مرمر" data-en="Marble" data-ar="رخام">مرمر</span>
+                        <span class="tag lang-text" data-fa="ایتالیایی" data-en="Italian" data-ar="إيطالي">ایتالیایی</span>
+                        <span class="tag lang-text" data-fa="لوکس" data-en="Luxury" data-ar="فاخر">لوکس</span>
+                    </div>
+                </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="black-galaxy.jpg" alt="گرانیت بلک گالکسی">
+                    <h3>Black Galaxy Granite</h3>
+                    <p class="lang-text"
+                       data-fa="گرانیت سیاه با نقاط طلایی درخشان، ترکیبی از قدرت و زیبایی"
+                       data-en="Black granite with sparkling golden flecks, a combination of strength and beauty"
+                       data-ar="جرانيت أسود بنقاط ذهبية لامعة، مزيج من القوة والجمال"></p>
+                    <div class="product-tags">
+                        <span class="tag lang-text" data-fa="گرانیت" data-en="Granite" data-ar="جرانيت">گرانیت</span>
+                        <span class="tag lang-text" data-fa="مقاوم" data-en="Durable" data-ar="متين">مقاوم</span>
+                        <span class="tag lang-text" data-fa="زیبا" data-en="Beautiful" data-ar="جميل">زیبا</span>
+                    </div>
+                </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="taj-mahal-quartzite.jpg" alt="کوارتزیت تاج محل">
+                    <h3>Taj Mahal Quartzite</h3>
+                    <p class="lang-text"
+                       data-fa="کوارتزایت کرم طلایی فوق‌العاده مقاوم، مناسب برای فضاهای پرتردد"
+                       data-en="Cream-golden quartzite extremely durable, perfect for high-traffic areas"
+                       data-ar="كوارتزايت كريمي ذهبي متين جدًا، مثالي للمناطق ذات الحركة المرورية العالية"></p>
+                    <div class="product-tags">
+                        <span class="tag lang-text" data-fa="کوارتزایت" data-en="Quartzite" data-ar="كوارتزايت">کوارتزایت</span>
+                        <span class="tag lang-text" data-fa="مقاوم" data-en="Durable" data-ar="متين">مقاوم</span>
+                        <span class="tag lang-text" data-fa="پرتردد" data-en="High-traffic" data-ar="ذو حركة مرورية عالية">پرتردد</span>
+                    </div>
+                </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="travertine.jpg" alt="تراورتن">
+                    <h3>Classic Travertine</h3>
+                    <p class="lang-text"
+                       data-fa="تراورتن با بافت طبیعی و رنگ‌های گرم، انتخابی ایده‌آل برای دکوراسیون کلاسیک"
+                       data-en="Travertine with natural texture and warm colors, ideal for classic decoration"
+                       data-ar="ترافرتين بملمس طبيعي وألوان دافئة، مثالي للديكور الكلاسيكي"></p>
+                    <div class="product-tags">
+                        <span class="tag lang-text" data-fa="تراورتن" data-en="Travertine" data-ar="ترافرتين">تراورتن</span>
+                        <span class="tag lang-text" data-fa="کلاسیک" data-en="Classic" data-ar="كلاسيكي">کلاسیک</span>
+                        <span class="tag lang-text" data-fa="طبیعی" data-en="Natural" data-ar="طبيعي">طبیعی</span>
+                    </div>
+                </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="onyx.jpg" alt="اونیکس">
+                    <h3>Purple Onyx</h3>
+                    <p class="lang-text"
+                       data-fa="اونیکس بنفش شفاف با الگوهای طبیعی منحصر به فرد، برای طراحی‌های خاص"
+                       data-en="Transparent purple onyx with unique natural patterns, for special designs"
+                       data-ar="أونيكس بنفسجي شفاف بأنماط طبيعية فريدة، للتصاميم الخاصة"></p>
+                    <div class="product-tags">
+                        <span class="tag lang-text" data-fa="اونیکس" data-en="Onyx" data-ar="أونيكس">اونیکس</span>
+                        <span class="tag lang-text" data-fa="شفاف" data-en="Transparent" data-ar="شفاف">شفاف</span>
+                        <span class="tag lang-text" data-fa="منحصر" data-en="Unique" data-ar="فريد">منحصر</span>
+                    </div>
+                </div>
+                <div class="glass-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="imperial-gold.jpg" alt="گرانیت طلایی امپریال">
+                    <h3>Imperial Gold Granite</h3>
+                    <p class="lang-text"
+                       data-fa="گرانیت طلایی با الگوهای پیچیده، نمادی از شکوه و بزرگی"
+                       data-en="Golden granite with intricate patterns, a symbol of grandeur"
+                       data-ar="جرانيت ذهبي بأنماط معقدة، رمز للروعة والعظمة"></p>
+                    <div class="product-tags">
+                        <span class="tag lang-text" data-fa="گرانیت" data-en="Granite" data-ar="جرانيت">گرانیت</span>
+                        <span class="tag lang-text" data-fa="طلایی" data-en="Golden" data-ar="ذهبي">طلایی</span>
+                        <span class="tag lang-text" data-fa="لوکس" data-en="Luxury" data-ar="فاخر">لوکس</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>
+                    <span class="lang-text" data-fa="فرآیند" data-en="Production" data-ar="عملية">فرآیند</span>
+                    <span class="lang-text" data-fa="تولید" data-en="Process" data-ar="الإنتاج">تولید</span>
+                </h2>
+                <div class="divider"></div>
+                <p class="section-subtitle lang-text"
+                   data-fa="از انتخاب معدن تا تحویل نهایی، هر مرحله با دقت و استانداردهای بین‌المللی انجام می‌شود"
+                   data-en="From quarry selection to final delivery, each step is performed with precision and international standards"
+                   data-ar="من اختيار المحجر إلى التسليم النهائي، يتم تنفيذ كل خطوة بدقة ومعايير دولية"></p>
+            </div>
+            <div class="grid">
+                <div class="glass-card process-item" data-aos="fade-up">
+                    <i data-feather="map-pin"></i>
+                    <h3 class="lang-text" data-fa="انتخاب معدن" data-en="Quarry Selection" data-ar="اختيار المحجر"></h3>
+                    <p class="lang-text"
+                       data-fa="انتخاب دقیق بهترین معادن سنگ طبیعی در ایران با توجه به کیفیت و رنگ سنگ"
+                       data-en="Careful selection of the best natural stone quarries in Iran considering quality and color"
+                       data-ar="اختيار دقيق لأفضل محاجر الحجر الطبيعي في إيران مع مراعاة الجودة واللون"></p>
+                </div>
+                <div class="glass-card process-item" data-aos="fade-up" data-aos-delay="100">
+                    <i data-feather="package"></i>
+                    <h3 class="lang-text" data-fa="برش بلوک" data-en="Block Cutting" data-ar="قطع الكتل"></h3>
+                    <p class="lang-text"
+                       data-fa="برش حرفه‌ای بلوک‌های سنگ با استفاده از جدیدترین تکنولوژی‌های روز دنیا"
+                       data-en="Professional cutting of stone blocks using the latest world technologies"
+                       data-ar="قطع محترف للكتل الحجرية باستخدام أحدث التقنيات العالمية"></p>
+                </div>
+                <div class="glass-card process-item" data-aos="fade-up" data-aos-delay="200">
+                    <i data-feather="sliders"></i>
+                    <h3 class="lang-text" data-fa="تولید اسلب" data-en="Slab Production" data-ar="إنتاج الألواح"></h3>
+                    <p class="lang-text"
+                       data-fa="تولید اسلب‌های با کیفیت در ضخامت‌ها و ابعاد مختلف مطابق با استانداردهای بین‌المللی"
+                       data-en="Production of high-quality slabs in various thicknesses and dimensions according to international standards"
+                       data-ar="إنتاج ألواح عالية الجودة بسمكات وأبعاد مختلفة وفقًا للمعايير الدولية"></p>
+                </div>
+                <div class="glass-card process-item" data-aos="fade-up" data-aos-delay="300">
+                    <i data-feather="check-circle"></i>
+                    <h3 class="lang-text" data-fa="کنترل کیفیت" data-en="Quality Control" data-ar="مراقبة الجودة"></h3>
+                    <p class="lang-text"
+                       data-fa="بازرسی دقیق هر اسلب قبل از بسته‌بندی نهایی برای اطمینان از کیفیت بی‌نظیر"
+                       data-en="Thorough inspection of each slab before final packaging to ensure unparalleled quality"
+                       data-ar="فحص دقيق لكل لوح قبل التعبئة النهائية لضمان جودة لا مثيل لها"></p>
+                </div>
+                <div class="glass-card process-item" data-aos="fade-up" data-aos-delay="400">
+                    <i data-feather="truck"></i>
+                    <h3 class="lang-text" data-fa="بسته‌بندی و حمل" data-en="Packaging & Shipping" data-ar="التعبئة والشحن"></h3>
+                    <p class="lang-text"
+                       data-fa="بسته‌بندی حرفه‌ای و حمل و نقل ایمن به تمام نقاط جهان با رعایت استانداردهای بین‌المللی"
+                       data-en="Professional packaging and safe transportation worldwide complying with international standards"
+                       data-ar="تعبئة محترفة ونقل آمن إلى جميع أنحاء العالم وفقًا للمعايير الدولية"></p>
+                </div>
+                <div class="glass-card process-item" data-aos="fade-up" data-aos-delay="500">
+                    <i data-feather="award"></i>
+                    <h3 class="lang-text" data-fa="ضمانت نامحدود" data-en="Lifetime Warranty" data-ar="ضمان مدى الحياة"></h3>
+                    <p class="lang-text"
+                       data-fa="ضمانت نامحدود کیفیت و دوام محصولات، نشان اعتماد ما به محصولاتمان"
+                       data-en="Lifetime warranty on quality and durability, our confidence in our products"
+                       data-ar="ضمان مدى الحياة على الجودة والمتانة، ثقتنا في منتجاتنا"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>
+                    <span class="lang-text" data-fa="گالری" data-en="Project" data-ar="معرض">گالری</span>
+                    <span class="lang-text" data-fa="پروژه‌ها" data-en="Gallery" data-ar="المشاريع">پروژه‌ها</span>
+                </h2>
+                <div class="divider"></div>
+                <p class="section-subtitle lang-text"
+                   data-fa="نمونه‌ای از پروژه‌های موفق ما در سراسر جهان، از ویلاهای لوکس تا هتل‌های پنج ستاره"
+                   data-en="Samples of our successful projects worldwide, from luxury villas to five-star hotels"
+                   data-ar="عينات من مشاريعنا الناجحة في جميع أنحاء العالم، من الفيلات الفاخرة إلى الفنادق الخمس نجوم"></p>
+            </div>
+            <div class="grid">
+                <div class="glass-card" data-aos="zoom-in">
+                    <img src="project1.jpg" alt="پروژه هتل دبی">
+                    <h4 class="lang-text" data-fa="هتل لوکس دبی" data-en="Luxury Hotel in Dubai" data-ar="فندق فاخر في دبي"></h4>
+                    <p class="lang-text" data-fa="استفاده از مرمر کارارا و گرانیت بلک گالکسی" data-en="Using Carrara Marble and Black Galaxy Granite" data-ar="باستخدام رخام كارارا وجرانيت بلاك غالاكسي"></p>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="project2.jpg" alt="ویلای خصوصی تهران">
+                    <h4 class="lang-text" data-fa="ویلای خصوصی در تهران" data-en="Private Villa in Tehran" data-ar="فيلا خاصة في طهران"></h4>
+                    <p class="lang-text" data-fa="ترکیبی از تراورتن و کوارتزایت تاج محل" data-en="Combination of Travertine and Taj Mahal Quartzite" data-ar="مزيج من الترافرتين وكوارتزايت تاج محل"></p>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="project3.jpg" alt="مرکز تجاری میلان">
+                    <h4 class="lang-text" data-fa="مرکز تجاری در میلان" data-en="Shopping Center in Milan" data-ar="مركز تجاري في ميلانو"></h4>
+                    <p class="lang-text" data-fa="استفاده از گرانیت طلایی امپریال" data-en="Using Imperial Gold Granite" data-ar="باستخدام جرانيت إمبراطوري ذهبي"></p>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="project4.jpg" alt="رستوران پنج ستاره پاریس">
+                    <h4 class="lang-text" data-fa="رستوران پنج ستاره پاریس" data-en="Five-Star Restaurant in Paris" data-ar="مطعم خمس نجوم في باريس"></h4>
+                    <p class="lang-text" data-fa="اونیکس بنفش برای دکوراسیون داخلی" data-en="Purple Onyx for interior decoration" data-ar="أونيكس بنفسجي للديكور الداخلي"></p>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="project5.jpg" alt="لابی هتل نیویورک">
+                    <h4 class="lang-text" data-fa="لابی هتل در نیویورک" data-en="Hotel Lobby in New York" data-ar="ردهة فندق في نيويورك"></h4>
+                    <p class="lang-text" data-fa="ترکیبی از مرمر و گرانیت" data-en="Combination of Marble and Granite" data-ar="مزيج من الرخام والجرانيت"></p>
+                </div>
+                <div class="glass-card" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="project6.jpg" alt="استخر ویلا مالدیو">
+                    <h4 class="lang-text" data-fa="استخر ویلا در مالدیو" data-en="Villa Pool in Maldives" data-ar="مسبح فيلا في المالديف"></h4>
+                    <p class="lang-text" data-fa="تراورتن برای فضای بیرونی" data-en="Travertine for outdoor space" data-ar="ترافرتين للمساحة الخارجية"></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clients Section -->
+    <section id="clients" class="clients-section">
+        <div class="container">
+            <h2 class="clients-title lang-text"
+                data-fa="مورد اعتماد توسط برندهای برتر جهانی"
+                data-en="Trusted by leading global brands"
+                data-ar="موثوق بها من قبل العلامات التجارية العالمية الرائدة"></h2>
+
+            <div class="embla">
+                <div class="fade-left"></div>
+                <div class="fade-right"></div>
+
+                <div class="embla__viewport">
+                    <div class="embla__container">
+                        <div class="embla__slide">
+                            <img src="client1.png" alt="مشتری 1">
+                        </div>
+                        <div class="embla__slide">
+                            <img src="client2.png" alt="مشتری 2">
+                        </div>
+                        <div class="embla__slide">
+                            <img src="client3.png" alt="مشتری 3">
+                        </div>
+                        <div class="embla__slide">
+                            <img src="client4.png" alt="مشتری 4">
+                        </div>
+                        <div class="embla__slide">
+                            <img src="client5.png" alt="مشتری 5">
+                        </div>
+                        <div class="embla__slide">
+                            <img src="client6.png" alt="مشتری 6">
+                        </div>
+                        <div class="embla__slide">
+                            <img src="client7.png" alt="مشتری 7">
+                        </div>
+                        <div class="embla__slide">
+                            <img src="client8.png" alt="مشتری 8">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- History Section -->
+  <!----  <section id="history">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>
+                    <span class="lang-text" data-fa="تاریخچه" data-en="Our" data-ar="تاريخ">تاریخچه</span>
+                    <span class="lang-text" data-fa="ما" data-en="History" data-ar="نا">ما</span>
+                </h2>
+                <div class="divider"></div>
+                <p class="section-subtitle lang-text"
+                   data-fa="مسیر رشد و پیشرفت سنگ احسان از آغاز تا کنون"
+                   data-en="Our growth journey from the beginning to present"
+                   data-ar="رحلة نمونا من البداية حتى الآن"></p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <div class="timeline-year lang-text" data-fa="۱۳۷۵" data-en="1996" data-ar="1996"></div>
+                        <h3 class="lang-text" data-fa="تاسیس شرکت" data-en="Company Founded" data-ar="تأسيس الشركة"></h3>
+                        <p class="lang-text"
+                           data-fa="شرکت سنگ احسان با هدف استخراج و فراوری سنگ‌های طبیعی با کیفیت بالا در شهر اصفهان تأسیس شد. در آغاز با یک معدن کوچک و تیم ۵ نفره فعالیت خود را آغاز کردیم."
+                           data-en="Ehsanestone Company was founded in Isfahan with the goal of extracting and processing high-quality natural stones. We started with a small quarry and a team of 5 people."
+                           data-ar="تأسست شركة إحسان ستون في أصفهان بهدف استخراج ومعالجة الأحجار الطبيعية عالية الجودة. بدأنا بمقلع صغير وفريق مكون من 5 أشخاص."></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <div class="timeline-year lang-text" data-fa="۱۳۸۲" data-en="2003" data-ar="2003"></div>
+                        <h3 class="lang-text" data-fa="اولین صادرات" data-en="First Export" data-ar="أول تصدير"></h3>
+                        <p class="lang-text"
+                           data-fa="با توسعه فعالیت‌ها، اولین محموله صادراتی خود را به کشور امارات متحده عربی ارسال کردیم. این نقطه عطفی در رشد شرکت بود که ما را به بازارهای بین‌المللی معرفی کرد."
+                           data-en="With the expansion of our activities, we sent our first export shipment to the United Arab Emirates. This was a turning point in the company's growth that introduced us to international markets."
+                           data-ar="مع توسع أنشطة الشركة، أرسلنا أول شحنة تصدير لدينا إلى الإمارات العربية المتحدة. كانت هذه نقطة تحول في نمو الشركة التي قدمتنا للأسواق الدولية."></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <div class="timeline-year lang-text" data-fa="۱۳۸۸" data-en="2009" data-ar="2009"></div>
+                        <h3 class="lang-text" data-fa="اخذ گواهینامه ISO" data-en="ISO Certification" data-ar="شهادة أيزو"></h3>
+                        <p class="lang-text"
+                           data-fa="با دریافت گواهینامه ISO 9001، استانداردهای کیفیت خود را به سطح بین‌المللی رساندیم. این گواهینامه نشان دهنده تعهد ما به کیفیت و بهبود مستمر فرآیندها بود."
+                           data-en="By obtaining ISO 9001 certification, we brought our quality standards to international level. This certificate demonstrated our commitment to quality and continuous improvement of processes."
+                           data-ar="من خلال الحصول على شهادة أيزو 9001، رفعنا معايير الجودة لدينا إلى المستوى الدولي. كانت هذه الشهادة دليلاً على التزامنا بالجودة وتحسين العمليات باستمرار."></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <div class="timeline-year lang-text" data-fa="۱۳۹۲" data-en="2013" data-ar="2013"></div>
+                        <h3 class="lang-text" data-fa="توسعه کارخانه" data-en="Factory Expansion" data-ar="توسعة المصنع"></h3>
+                        <p class="lang-text"
+                           data-fa="با سرمایه‌گذاری قابل توجه، کارخانه جدیدی در شهرک صنعتی مورچه خورت اصفهان راه‌اندازی کردیم. این کارخانه با تجهیزات مدرن امکان تولید انبوه با کیفیت بالا را فراهم کرد."
+                           data-en="With significant investment, we launched a new factory in Morcheh Khort Industrial City, Isfahan. This factory with modern equipment enabled mass production with high quality."
+                           data-ar="مع استثمار كبير، أطلقنا مصنعًا جديدًا في مدينة مورچه خورت الصناعية، أصفهان. مكن هذا المصنع مع المعدات الحديثة من الإنتاج الجماعي بجودة عالية."></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <div class="timeline-year lang-text" data-fa="۱۳۹۵" data-en="2016" data-ar="2016"></div>
+                        <h3 class="lang-text" data-fa="ورود به بازار اروپا" data-en="Entering European Market" data-ar="الدخول إلى السوق الأوروبية"></h3>
+                        <p class="lang-text"
+                           data-fa="با دریافت استانداردهای اروپایی، موفق به ورود به بازارهای اروپا شدیم. اولین پروژه بزرگ ما در اروپا، تامین سنگ برای یک هتل پنج ستاره در ایتالیا بود."
+                           data-en="By obtaining European standards, we successfully entered European markets. Our first major project in Europe was supplying stone for a five-star hotel in Italy."
+                           data-ar="من خلال الحصول على المعايير الأوروبية، دخلنا بنجاح إلى الأسواق الأوروبية. كان أول مشروع كبير لنا في أوروبا هو توفير الحجر لفندق خمس نجوم في إيطاليا."></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-content">
+                        <div class="timeline-year lang-text" data-fa="۱۴۰۰" data-en="2021" data-ar="2021"></div>
+                        <h3 class="lang-text" data-fa="تکنولوژی جدید" data-en="New Technology" data-ar="تكنولوجيا جديدة"></h3>
+                        <p class="lang-text"
+                           data-fa="با نصب جدیدترین دستگاه‌های برش و پولیش سنگ، توانایی تولید محصولات با دقت و کیفیت بی‌نظیر را پیدا کردیم. این فناوری‌ها امکان تولید اسلب‌های نازک و بزرگ را فراهم کردند."
+                           data-en="By installing the latest stone cutting and polishing machines, we gained the ability to produce products with unparalleled precision and quality. These technologies enabled the production of thin and large slabs."
+                           data-ar="من خلال تركيب أحدث آلات قطع وصقل الحجر، اكتسبنا القدرة على إنتاج منتجات بدقة وجودة لا مثيل لها. مكنت هذه التقنيات من إنتاج ألواح رقيقة وكبيرة."></p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-content">
+                        <div class="timeline-year lang-text" data-fa="۱۴۰۲" data-en="2023" data-ar="2023"></div>
+                        <h3 class="lang-text" data-fa="برند جهانی" data-en="Global Brand" data-ar="علامة تجارية عالمية"></h3>
+                        <p class="lang-text"
+                           data-fa="امروز سنگ احسان به عنوان یکی از برندهای معتبر جهانی در صنعت سنگ شناخته می‌شود. با بیش از ۵۰ کشور مقصد صادراتی و پروژه‌های موفق در سراسر جهان، ما همچنان به رشد و نوآوری ادامه می‌دهیم."
+                           data-en="Today, Ehsnestone is recognized as one of the reputable global brands in the stone industry. With over 50 export destination countries and successful projects worldwide, we continue to grow and innovate."
+                           data-ar="اليوم، تُعرف إحسان ستون كواحدة من العلامات التجارية الموثوق بها عالميًا في صناعة الحجر. مع أكثر من 50 دولة وجهة تصدير ومشاريع ناجحة في جميع أنحاء العالم، نواصل النمو والابتكار."></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ --->
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>
+                    <span class="lang-text" data-fa="تماس" data-en="Contact" data-ar="اتصل">تماس</span>
+                    <span class="lang-text" data-fa="با ما" data-en="Us" data-ar="بنا">با ما</span>
+                </h2>
+                <div class="divider"></div>
+                <p class="section-subtitle lang-text"
+                   data-fa="برای اطلاعات بیشتر یا سفارش محصولات، فرم زیر را پر کنید یا مستقیم با ما تماس بگیرید"
+                   data-en="For more information or to order products, fill out the form below or contact us directly"
+                   data-ar="لمزيد من المعلومات أو لطلب المنتجات، املأ النموذج أدناه أو اتصل بنا مباشرة"></p>
+            </div>
+            
+
+
+             <!---  <div class="glass-card" data-aos="fade-up">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="نام و نام خانوادگی / Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="ایمیل / Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="شماره تماس / Phone" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="" disabled selected class="lang-text" data-fa="نوع سنگ مورد نظر" data-en="Stone Type" data-ar="نوع الحجر">نوع سنگ مورد نظر</option>
+                                <option value="marble" class="lang-text" data-fa="مرمر" data-en="Marble" data-ar="رخام">مرمر</option>
+                                <option value="granite" class="lang-text" data-fa="گرانیت" data-en="Granite" data-ar="جرانيت">گرانیت</option>
+                                <option value="travertine" class="lang-text" data-fa="تراورتن" data-en="Travertine" data-ar="ترافرتين">تراورتن</option>
+                                <option value="quartzite" class="lang-text" data-fa="کوارتزایت" data-en="Quartzite" data-ar="كوارتزايت">کوارتزایت</option>
+                                <option value="onyx" class="lang-text" data-fa="اونیکس" data-en="Onyx" data-ar="أونيكس">اونیکس</option>
+                                <option value="other" class="lang-text" data-fa="سایر" data-en="Other" data-ar="آخر">سایر</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea rows="5" placeholder="پیام شما / Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <span class="lang-text" data-fa="ارسال درخواست" data-en="Send Message" data-ar="إرسال الطلب">ارسال درخواست</span>
+                        </button>
+                    </form>
+                </div>
+--> 
+
+      <div class="glass-card" data-aos="fade-up">
+            <form id="contactForm">
+                <div class="form-group">
+                    <input type="text" name="name" placeholder="نام و نام خانوادگی / Name" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" placeholder="ایمیل / Email" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" name="phone" placeholder="شماره تماس / Phone">
+                </div>
+                <div class="form-group">
+                    <select name="stone_type" required>
+                        <option value="" disabled selected class="lang-text" data-fa="نوع سنگ مورد نظر" data-en="Stone Type" data-ar="نوع الحجر">نوع سنگ مورد نظر</option>
+                        <option value="مرمر" class="lang-text" data-fa="مرمر" data-en="Marble" data-ar="رخام">مرمر</option>
+                        <option value="گرانیت" class="lang-text" data-fa="گرانیت" data-en="Granite" data-ar="جرانيت">گرانیت</option>
+                        <option value="تراورتن" class="lang-text" data-fa="تراورتن" data-en="Travertine" data-ar="ترافرتين">تراورتن</option>
+                        <option value="کوارتزایت" class="lang-text" data-fa="کوارتزایت" data-en="Quartzite" data-ar="كوارتزايت">کوارتزایت</option>
+                        <option value="اونیکس" class="lang-text" data-fa="اونیکس" data-en="Onyx" data-ar="أونيكس">اونیکس</option>
+                        <option value="سایر" class="lang-text" data-fa="سایر" data-en="Other" data-ar="آخر">سایر</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" rows="5" placeholder="پیام شما / Your Message" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn">
+                    <span class="lang-text" data-fa="ارسال درخواست" data-en="Send Message" data-ar="إرسال الطلب">ارسال درخواست</span>
+                </button>
+            </form>
+        </div>
+
+
+            </div><div class="grid" style="grid-template-columns: 1fr; gap: 2rem;">
+                <div class="glass-card" data-aos="fade-up">
+                    <h3 style="font-size: 2rem; margin-bottom: 2rem; color: var(--primary);" class="lang-text"
+                        data-fa="اطلاعات تماس" data-en="Contact Info" data-ar="معلومات التواصل"></h3>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: white;" class="lang-text"
+                            data-fa="دفتر مرکزی" data-en="Head Office" data-ar="المكتب الرئيسي"></h4>
+                        <p><i data-feather="map-pin" class="inline"></i>
+                            <span class="lang-text"
+                                  data-fa="تهران – شهرک صنعتی چهاردانگه، بلوار اصلی، پلاک 45"
+                                  data-en="Tehran - Chahardangeh Industrial City, Main Blvd, No. 45"
+                                  data-ar="طهران - مدينة چهاردانگه الصناعية، شارع رئيسي، رقم 45"></span>
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: white;" class="lang-text"
+                            data-fa="کارخانه تولید" data-en="Production Factory" data-ar="مصنع الإنتاج"></h4>
+                        <p><i data-feather="home" class="inline"></i>
+                            <span class="lang-text"
+                                  data-fa="اصفهان – شهرک صنعتی مورچه خورت، فاز 2، واحد 12"
+                                  data-en="Isfahan - Morcheh Khort Industrial City, Phase 2, Unit 12"
+                                  data-ar="أصفهان - مدينة مورچه خورت الصناعية، المرحلة الثانية، وحدة 12"></span>
+                        </p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: white;" class="lang-text"
+                            data-fa="اطلاعات تماس" data-en="Contact Details" data-ar="تفاصيل الاتصال"></h4>
+                        <p class="my-2"><i data-feather="phone"></i>
+                            <span dir="ltr">+98 21 1234 5678</span>
+                        </p>
+                        <p class="my-2"><i data-feather="mail"></i>
+                            <span dir="ltr">info@ehsnestone.com</span>
+                        </p>
+                        <p class="my-2"><i data-feather="globe"></i>
+                            <span dir="ltr">www.ehsanestoneco.com</span>
+                        </p>
+                    </div>
+
+                    <div class="social">
+                        <a href="#" aria-label="اینستاگرام"><i data-feather="instagram"></i></a>
+                        <a href="#" aria-label="لینکدین"><i data-feather="linkedin"></i></a>
+                        <a href="#" aria-label="تلگرام"><i data-feather="telegram"></i></a>
+                        <a href="#" aria-label="واتساپ"><i data-feather="message-circle"></i></a>
+                    </div>
+                </div>
+
+        </div>
+    </section>
+    --->
+   <!---Map Section -->
+   <section id="map" style="padding: 0;">
+        <div class="container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d858.7795728898872!2d53.20755535042206!3d30.574205927305467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3fae45488a669ed9%3A0x6c4ff13becc70b22!2z2LPZhtqvINin2K3Ys9in2YY!5e0!3m2!1sen!2s!4v1765570510126!5m2!1sen!2s&maptype=satellite" width="100%" height="450" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="header-content" style="margin-bottom: 2rem;">
+                    <div class="logo-icon">
+                        <img src="ehsanestone.png" alt="Ehsanestone Logo" style="width: 100%; height: 100%; object-fit: contain;">
+                    </div>
+                    <h1 class="logo-text" style="font-size: 2rem;">Ehsanestone</h1>
+                </div>
+                <div class="footer-links">
+                    <a href="#home" class="lang-text" data-fa="خانه" data-en="Home" data-ar="الرئيسية">خانه</a>
+                    <a href="#about" class="lang-text" data-fa="درباره ما" data-en="About" data-ar="عننا">درباره ما</a>
+                    <a href="#products" class="lang-text" data-fa="محصولات" data-en="Products" data-ar="المنتجات">محصولات</a>
+                    <a href="#process" class="lang-text" data-fa="فرآیند" data-en="Process" data-ar="العملية">فرآیند</a>
+                    <a href="#gallery" class="lang-text" data-fa="گالری" data-en="Gallery" data-ar="معرض الصور">گالری</a>
+                    <a href="#team" class="lang-text" data-fa="تیم ما" data-en="Our Team" data-ar="فريقنا">تیم ما</a>
+                    <a href="#clients" class="lang-text" data-fa="مشتریان" data-en="Clients" data-ar="عملائنا">مشتریان</a>
+                    <a href="#contact" class="lang-text" data-fa="تماس" data-en="Contact" data-ar="اتصل">تماس</a>
+                </div>
+            </div>
+            <div class="copyright lang-text"
+                 data-fa="© 1404 سنگ احسان. تمام حقوق محفوظ است."
+                 data-en="© 2025 Ehsnestone. All rights reserved."
+                 data-ar="© 2025 إحسان ستون. جميع الحقوق محفوظة.">
+                
+            
+                  </div>
+                 <p>Under improvement by </p><a href="https://t.me/geekograph" target="_blank" class="neon-signature">
+                    <span class="g">G</span><span class="eeko">EEKO</span>
+                    </a>
+
+                    <style>
+                    @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap');
+
+                    .neon-signature {
+                    font-family: 'Orbitron', sans-serif;
+                    font-size: 32px;
+                    text-decoration: none;
+                    display: inline-block;
+                    color: #000000; /* متن پایه مشکی */
+                    transition: transform 0.6s ease, color 0.6s ease;
+                    transform-origin: center; /* مرکز برای چرخش */
+                    }
+
+                    .neon-signature .g {
+                    color: #369B5F;
+                    }
+
+                    .neon-signature .eeko {
+                    color: #ffffff;
+                    }
+
+                    .neon-signature:hover {
+                    transform: rotateX(180deg); /* چرخش 180 درجه حول محور افقی */
+                    color: #08D600; /* رنگ نئون هنگام هاور */
+                    }
+                    </style>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.min.js"></script>
+    <script src="https://unpkg.com/embla-carousel/embla-carousel.umd.js"></script>
+    <script src="https://unpkg.com/embla-carousel-auto-scroll/embla-carousel-auto-scroll.umd.js"></script>
+
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Particles Background
+        const canvas = document.getElementById('particles-bg');
+        const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setSize(window.innerWidth, window.innerHeight);
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.1, 1000);
+        camera.position.z = 600;
+
+        const geometry = new THREE.BufferGeometry();
+        const count = 8000;
+        const positions = new Float32Array(count * 3);
+
+        for(let i = 0; i < count * 3; i++) {
+            positions[i] = (Math.random() - 0.5) * 2000;
+        }
+
+        geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+        const material = new THREE.PointsMaterial({
+            color: '#0089a7',
+            size: 3,
+            transparent: true,
+            opacity: 0.7,
+            blending: THREE.AdditiveBlending
+        });
+
+        const particles = new THREE.Points(geometry, material);
+        scene.add(particles);
+
+        function animate() {
+            requestAnimationFrame(animate);
+            particles.rotation.y += 0.0003;
+            particles.rotation.x += 0.0002;
+            renderer.render(scene, camera);
+        }
+
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        });
+
+        // Header Scroll Effect
+        window.addEventListener('scroll', () => {
+            document.querySelector('header').classList.toggle('scrolled', window.scrollY > 100);
+        });
+
+        // Mobile Menu Toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.querySelector('.nav-links').classList.remove('active');
+                document.body.classList.remove('menu-open');
+            });
+        });
+
+        // Language Switcher - Fixed for English layout
+        const savedLang = localStorage.getItem('lang') || 'fa';
+
+        function setLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
+            document.body.dir = document.documentElement.dir;
+
+            // Adjust language switch position for English
+            const langSwitch = document.querySelector('.lang-switch');
+            if (lang === 'en') {
+                langSwitch.style.marginRight = '1rem';
+                langSwitch.style.marginLeft = '0';
+            } else {
+                langSwitch.style.marginRight = '0';
+                langSwitch.style.marginLeft = '1rem';
+            }
+
+            // Update active language button
+            document.querySelectorAll('[data-lang]').forEach(btn => {
+                btn.classList.toggle('active', btn.dataset.lang === lang);
+            });
+
+            // Update all language-dependent text
+            document.querySelectorAll('.lang-text').forEach(el => {
+                const text = el.dataset[lang];
+                if (text) el.textContent = text;
+            });
+
+            // Update form placeholders based on language
+            const form = document.getElementById('contactForm');
+            if (form) {
+                const placeholders = {
+                    'fa': ["نام و نام خانوادگی", "ایمیل", "شماره تماس", "پیام شما"],
+                    'en': ["Name", "Email", "Phone", "Your Message"],
+                    'ar': ["الاسم الكامل", "البريد الإلكتروني", "رقم الهاتف", "رسالتك"]
+                };
+
+                const inputs = form.querySelectorAll('input, textarea');
+                inputs[0].placeholder = placeholders[lang][0];
+                inputs[1].placeholder = placeholders[lang][1];
+                inputs[2].placeholder = placeholders[lang][2];
+                inputs[3].placeholder = placeholders[lang][3];
+            }
+
+            localStorage.setItem('lang', lang);
+        }
+
+        // Set up language buttons
+        document.querySelectorAll('[data-lang]').forEach(btn => {
+            btn.addEventListener('click', () => setLanguage(btn.dataset.lang));
+        });
+
+        // Initialize language
+        setLanguage(savedLang);
+
+        // Form Submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const successMessages = {
+                'fa': 'پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.',
+                'en': 'Your message has been sent successfully! We will contact you soon.',
+                'ar': 'تم إرسال رسالتك بنجاح! سنتواصل معك قريبًا.'
+            };
+
+            alert(successMessages[savedLang]);
+            this.reset();
+        });
+
+        // Initialize Embla Carousel for clients section
+        const emblaNode = document.querySelector(".embla__viewport");
+        if (emblaNode) {
+            const options = {
+                loop: true,
+                align: 'center',
+                containScroll: 'trimSnaps',
+                slidesToScroll: 1
+            };
+
+            const plugins = [
+                EmblaCarouselAutoScroll({
+                    playOnInit: true,
+                    speed: 1.5,
+                    stopOnInteraction: false
+                })
+            ];
+
+            const embla = EmblaCarousel(emblaNode, options, plugins);
+        }
+
+        // Initialize Feather Icons
+        feather.replace();
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Add active class to current section in navigation
+        window.addEventListener('scroll', () => {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.nav-links a');
+
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= (sectionTop - 250)) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+    <script>
+     
+       document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    const formData = {
+        name: this.elements.name.value,
+        email: this.elements.email.value,
+        phone: this.elements.phone.value,
+        stone_type: this.elements.stone_type.value,
+        message: this.elements.message.value
+    };
+
+    try {
+        const response = await fetch('/send-message', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        });
+
+        const result = await response.json();
+
+        if (result.success) {
+            const successMessages = {
+                'fa': 'پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.',
+                'en': 'Your message has been sent successfully! We will contact you soon.',
+                'ar': 'تم إرسال رسالتک بنجاح! سنتواصل معك قريبًا.'
+            };
+            alert(successMessages[savedLang]);
+            this.reset();
+        } else {
+            alert(result.message || 'خطا در ارسال پیام. لطفا دوباره تلاش کنید.');
+        }
+    } catch (error) {
+        alert('خطا در اتصال به سرور. لطفا دوباره تلاش کنید.');
+    }
+});
+    </script>
+</body>
+</html>
