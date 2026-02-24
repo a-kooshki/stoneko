@@ -8,7 +8,7 @@
     <meta name="keywords" content="سنگ طبیعی, اسلب سنگ, مرمر, گرانیت, تراورتن, اونیکس, سنگ ساختمانی, سنگ لوکس, سنگ ایرانی">
 
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Poppins:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;700;900&family=Poppins:wght@300;400;600;800;900&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <!-- AOS Animation -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -25,6 +25,25 @@
     <meta itemprop="image" content="https://ehsnestone.com/images/og-image.jpg">
 
     <style>
+
+        @font-face {
+            font-family: 'IranYekanCustom';
+            src: url('fonts/iranyekan.woff2') format('woff2'),
+                 url('fonts/iranyekan.ttf') format('truetype');
+            font-weight: 300 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'AvenirCustom';
+            src: url('fonts/avenir.woff2') format('woff2'),
+                 url('fonts/avenir.ttf') format('truetype');
+            font-weight: 300 900;
+            font-style: normal;
+            font-display: swap;
+        }
+
         :root {
             --primary: #0089a7;
             --primary-dark: #006f8a;
@@ -43,7 +62,7 @@
         }
 
         body {
-            font-family: 'Vazirmatn', sans-serif;
+            font-family: 'IranYekanCustom', 'Vazirmatn', sans-serif;
             background: var(--dark);
             color: var(--text);
             line-height: 1.8;
@@ -51,8 +70,13 @@
             transition: var(--transition);
         }
 
-        [dir="ltr"] body {
-            font-family: 'Poppins', sans-serif;
+        html[lang="fa"] body,
+        html[lang="ar"] body {
+            font-family: 'IranYekanCustom', 'Vazirmatn', sans-serif;
+        }
+
+        html[lang="en"] body {
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
         }
 
         /* Header Styles */
@@ -99,11 +123,27 @@
         }
 
         .logo-text {
-            font-family: 'Poppins', sans-serif;
-            font-weight: 900;
-            font-size: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.1;
+            gap: 0.18rem;
             color: var(--primary);
             text-shadow: 0 2px 4px rgba(0, 137, 167, 0.3);
+        }
+
+        .logo-text-fa {
+            font-family: 'IranYekanCustom', 'Vazirmatn', sans-serif;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0;
+        }
+
+        .logo-text-en {
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
+            font-weight: 700;
+            font-size: 1.28rem;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
         }
 
      
@@ -122,8 +162,26 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 3.5rem;
+            gap: 2rem;
             transition: var(--transition);
+            flex-wrap: nowrap;
+        }
+
+        html[lang="fa"] .nav-links {
+            gap: 1.35rem;
+        }
+
+        html[lang="fa"] .nav-links a {
+            font-size: 0.98rem;
+            letter-spacing: 0;
+        }
+
+        html[lang="en"] .nav-links a {
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
+            font-size: 0.98rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            text-transform: none;
         }
 
         .nav-links a {
@@ -263,14 +321,20 @@
             left: 2rem;
         }
 
-        /* Language Switch Fix for English */
-        [dir="ltr"] .lang-switch {
+        /* Language-specific header spacing */
+        html[lang="en"] .lang-switch,
+        html[lang="ar"] .lang-switch {
             margin-right: 1rem;
             margin-left: 0;
         }
 
-        [dir="ltr"] .nav-links {
-            gap: 2rem;
+        html[lang="fa"] .lang-switch {
+            margin-left: 0;
+            margin-right: 0.65rem;
+        }
+
+        html[lang="en"] .nav-links {
+            gap: 1.2rem;
         }
 
         /* Rest of your existing styles remain the same */
@@ -293,8 +357,26 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 3.5rem;
+            gap: 2rem;
             transition: var(--transition);
+            flex-wrap: nowrap;
+        }
+
+        html[lang="fa"] .nav-links {
+            gap: 1.35rem;
+        }
+
+        html[lang="fa"] .nav-links a {
+            font-size: 0.98rem;
+            letter-spacing: 0;
+        }
+
+        html[lang="en"] .nav-links a {
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
+            font-size: 0.98rem;
+            font-weight: 500;
+            letter-spacing: 0.01em;
+            text-transform: none;
         }
 
         .nav-links a {
@@ -716,7 +798,7 @@
             justify-content: center;
             font-size: 34px;
             box-shadow: 0 10px 30px rgba(37,211,102,0.5);
-            z-index: 999;
+            z-index: 1001;
             animation: float 3s ease-in-out infinite;
             transition: var(--transition);
         }
@@ -802,26 +884,80 @@
         }
 
         @media (max-width: 992px) {
+            header {
+                z-index: 1004;
+            }
+
             .mobile-menu-btn {
                 display: block;
             }
 
+            .menu-backdrop {
+                position: fixed;
+                inset: 0;
+                background: radial-gradient(circle at 20% 10%, rgba(255,255,255,0.14), rgba(0,0,0,0.55));
+                backdrop-filter: blur(6px);
+                -webkit-backdrop-filter: blur(6px);
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: var(--transition);
+                z-index: 1001;
+            }
+
+            .menu-backdrop.active {
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+            }
+
             .nav-links {
                 position: fixed;
-                top: 0;
-                right: -100%;
-                width: 320px;
-                height: 100vh;
-                background: rgba(0,0,0,0.98);
+                top: 12px;
+                right: 12px;
+                width: min(86vw, 340px);
+                height: calc(100vh - 24px);
+                background: linear-gradient(145deg, rgba(255,255,255,0.16), rgba(255,255,255,0.05));
+                border: 1px solid rgba(255, 255, 255, 0.22);
+                border-radius: 22px;
+                box-shadow: 0 18px 45px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.2);
+                backdrop-filter: blur(20px) saturate(160%);
+                -webkit-backdrop-filter: blur(20px) saturate(160%);
                 flex-direction: column;
-                justify-content: center;
-                padding: 100px 40px;
-                gap: 2.5rem;
-                transition: var(--transition);
+                justify-content: flex-start;
+                padding: 88px 22px 24px;
+                gap: 0.85rem;
+                overflow-y: auto;
+                transform: translateX(110%);
+                opacity: 0;
+                visibility: hidden;
+                pointer-events: none;
+                transition: transform .35s ease, opacity .25s ease, visibility .25s ease;
             }
 
             .nav-links.active {
-                right: 0;
+                transform: translateX(0);
+                opacity: 1;
+                visibility: visible;
+                pointer-events: auto;
+                z-index: 1005;
+            }
+
+            .nav-links a {
+                width: 100%;
+                font-size: 1.02rem;
+                font-family: 'AvenirCustom', 'Inter', sans-serif;
+                padding: 0.5rem 0.4rem;
+                border-radius: 12px;
+            }
+
+            .nav-links a:active {
+                background: rgba(255,255,255,0.12);
+            }
+
+            .lang-switch {
+                margin-top: 0.8rem;
+                align-self: flex-start;
             }
 
             .hero h1 {
@@ -932,7 +1068,7 @@
             right: 20px;
             font-size: 5rem;
             color: var(--primary);
-            font-family: 'Poppins', sans-serif;
+            font-family: 'AvenirCustom', 'Inter', sans-serif;
         }
 
         .author {
@@ -1064,11 +1200,49 @@
     align-items: center;
 }
 
+
+#about .about-media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#about .about-media-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+#about .about-media-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+#about .about-media-card p {
+    font-size: 0.88rem;
+    line-height: 1.8;
+    padding: 0.7rem 0.85rem 0.9rem;
+    color: var(--text-secondary);
+    text-align: right;
+}
+
 /* Mobile Fix */
 @media (max-width: 768px) {
     #about .about-grid {
         grid-template-columns: 1fr !important;
-        gap: 2rem !important;
+        gap: 1.35rem !important;
+    }
+
+    #about .about-grid > div:first-child {
+        order: 2;
+    }
+
+    #about .about-grid > div:last-child {
+        order: 1;
     }
 
     #about img {
@@ -1077,19 +1251,48 @@
         border-radius: 16px;
     }
 
+    #about .about-media-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    #about .about-media-card img {
+        height: 150px;
+    }
+
     #about p {
-        font-size: 1rem;
-        line-height: 1.9;
+        font-size: 0.98rem;
+        line-height: 2;
         word-wrap: break-word;
+        text-align: justify;
     }
 
     #about .stats {
-        flex-direction: column;
-        gap: 1.8rem;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.65rem;
+        align-items: start;
+    }
+
+    #about .stat {
+        min-width: 0;
+    }
+
+    #about .stat-text {
+        font-size: 0.78rem;
+        line-height: 1.5;
     }
 
     #about .stat-number {
         font-size: 2.2rem;
+    }
+
+    .logo-text-fa {
+        font-size: 0.82rem;
+    }
+
+    .logo-text-en {
+        font-size: 1.06rem;
     }
 }
 
@@ -1113,7 +1316,10 @@
                 <div class="logo-icon">
                     <img src="ehsanestone.png" alt="Ehasnestone Logo">
                 </div>
-                <h1 class="logo-text">Ehsanstone</h1>
+                <h1 class="logo-text" aria-label="Ehsanstone">
+                    <span class="logo-text-fa">احسان استون</span>
+                    <span class="logo-text-en">EHSANSTONE</span>
+                </h1>
             </div>
             <button class="mobile-menu-btn" aria-label="منو">
                 <i data-feather="menu"></i>
@@ -1136,6 +1342,7 @@
             </div>
         </div>
     </header>
+    <div class="menu-backdrop" id="menuBackdrop" aria-hidden="true"></div>
 
     <!-- Hero Section -->
     <section class="hero" id="home">
@@ -1164,18 +1371,29 @@
                 <div class="divider"></div>
                 <p class="section-subtitle lang-text"
                    data-fa="سنگ احسان - پیشرو در صنعت سنگ طبیعی با بیش از دو دهه تجربه"
-                   data-en="Ehasnestone - Leader in natural stone industry with over two decades of experience"
+                   data-en="Ehsanstone - Leader in the natural stone industry with over two decades of experience"
                    data-ar="إحسان ستون - رائد في صناعة الحجر الطبيعي مع أكثر من عقدين من الخبرة"></p>
             </div>
 
-            <div class="grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
+            <div class="grid about-grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
                 <div data-aos="fade-right">
-                    <img src="about-image.jpg" alt="درباره سنگ احسان" >
+                    <img src="IMG_5781.jpg" alt="درباره سنگ احسان">
+
+                    <div class="about-media-grid">
+                        <div class="about-media-card">
+                            <img src="carrara-marble.jpg" alt="سنگ مرمر کارارا">
+                            <p class="lang-text" data-fa="مرمر کارارا؛ بافت لطیف و درخشش طبیعی برای فضاهای لوکس." data-en="Carrara marble: soft texture and natural shine for luxury spaces." data-ar="رخام كرارا: ملمس ناعم ولمعان طبيعي للمساحات الفاخرة.">مرمر کارارا؛ بافت لطیف و درخشش طبیعی برای فضاهای لوکس.</p>
+                        </div>
+                        <div class="about-media-card">
+                            <img src="black-galaxy.jpg" alt="سنگ بلک گلکسی">
+                            <p class="lang-text" data-fa="بلک گلکسی؛ مقاوم و چشمگیر، مناسب نما و دکوراسیون مدرن." data-en="Black Galaxy: durable and striking, ideal for façades and modern interiors." data-ar="بلاك جالاكسي: متين ولافت، مناسب للواجهات والديكور العصري.">بلک گلکسی؛ مقاوم و چشمگیر، مناسب نما و دکوراسیون مدرن.</p>
+                        </div>
+                    </div>
                 </div>
                 <div data-aos="fade-left">
                     <p class="lang-text"
                        data-fa="شرکت سنگ احسان با بیش از دو دهه تجربه در زمینه استخراج، فراوری و صادرات سنگ‌های طبیعی لوکس، یکی از پیشروان صنعت سنگ ایران است. ما با بهره‌گیری از جدیدترین فناوری‌ها و استانداردهای بین‌المللی، محصولاتی با کیفیت برتر را به بازارهای جهانی عرضه می‌کنیم."
-                       data-en="Ehasnestone Company, with over two decades of experience in extraction, processing and export of luxury natural stones, is one of the leaders in Iran's stone industry. Using the latest technologies and international standards, we offer premium quality products to global markets."
+                       data-en="Ehsanstone Company, with over two decades of experience in extracting, processing, and exporting luxury natural stones, is one of the leaders in Iran's stone industry. Using the latest technologies and international standards, we deliver premium-quality products to global markets."
                        data-ar="شركة إحسان ستون، مع أكثر من عقدين من الخبرة في استخراج ومعالجة وتصدير الأحجار الطبيعية الفاخرة، هي واحدة من الرواد في صناعة الحجر في إيران. باستخدام أحدث التقنيات والمعايير الدولية، نقدم منتجات ذات جودة عالية للأسواق العالمية."></p>
 
                     <div class="stats">
@@ -1216,14 +1434,13 @@
                     <img src="team-member1.jpg" alt="صمد کوشکی">
                     <h3 class="lang-text" data-fa="حاج صمد کوشکی" data-en="haj samad kooski" data-ar="السید ابدلصمد کوشکی"></h3>
                     <p class="lang-text" data-fa="رئيس هیت مدیره" data-en="CEO" data-ar="المدير التنفيذي"></p>
-                   <!--- <p class="lang-text" data-fa="بیش از 30 سال تجربه در صنعت سنگ" data-en="Over 30 years experience in stone industry" data-ar="أكثر من 30 عامًا من الخبرة في صناعة الحجر"></p>-->
+                   <p class="lang-text" data-fa="با ۴۰ سال تجربه در صنعت سنگ و ساختمان" data-en="With 40 years of experience in the stone and construction industry" data-ar="بخبرة 40 عامًا في صناعة الحجر والبناء"></p>
                 </div>
                 <div class="team-member glass-card" data-aos="fade-up" data-aos-delay="100">
                     <img src="team-member2.jpg" alt="احسان کوشکی مدیر عامل">
-                    <h3 class="lang-text" data-fa="حاج احسان کوشکی" data-en="mr.ehsan kooshki" data-ar="المهندس  احسان کوشکی"></h3>
-                    <p class="lang-text" data-fa="مدیر عامل" data-en="CEO" data-ar="المدير التنفيذي"></p>
-                    <p class="lang-text" data-fa="بیش از 20 سال تجربه در صنعت سنگ" data-en="Over 20 years experience in stone industry" data-ar="أكثر من 20 عامًا من الخبرة في صناعة الحجر"></p>
-                </div>
+                    <h3 class="lang-text" data-fa="مهندس احسان کوشکی" data-en="Eng. Ehsan Kooshki" data-ar="المهندس  احسان کوشکی"></h3>
+                    <p class="lang-text" data-fa="نایب رئیس و مدیر عامل" data-en="Vice Chairman & CEO" data-ar="نائب الرئيس والمدير التنفيذي"></p>
+                                    </div>
               <!---  <div class="team-member glass-card" data-aos="fade-up" data-aos-delay="200">
                     <img src="team-member3.jpg" alt="مهندس کریمی - مدیر تولید">
                     <h3 class="lang-text" data-fa="مهندس کریمی" data-en="Eng. Karimi" data-ar="المهندس كريمي"></h3>
@@ -1652,7 +1869,7 @@
 --> 
 
       <div class="glass-card" data-aos="fade-up">
-            <form id="contactForm">
+            <form id="contactForm" action="send-message.php" method="POST">
                 <div class="form-group">
                     <input type="text" name="name" placeholder="نام و نام خانوادگی / Name" required>
                 </div>
@@ -1679,6 +1896,7 @@
                 <button type="submit" class="submit-btn">
                     <span class="lang-text" data-fa="ارسال درخواست" data-en="Send Message" data-ar="إرسال الطلب">ارسال درخواست</span>
                 </button>
+                <p id="formStatus" style="margin-top:1rem; color:var(--text-secondary);"></p>
             </form>
         </div>
 
@@ -1750,7 +1968,10 @@
                     <div class="logo-icon">
                         <img src="ehsanestone.png" alt="Ehsanestone Logo" style="width: 100%; height: 100%; object-fit: contain;">
                     </div>
-                    <h1 class="logo-text" style="font-size: 2rem;">Ehsanestone</h1>
+                    <h1 class="logo-text" aria-label="Ehsanstone" style="font-size: 2rem;">
+                        <span class="logo-text-fa">احسان استون</span>
+                        <span class="logo-text-en">EHSANSTONE</span>
+                    </h1>
                 </div>
                 <div class="footer-links">
                     <a href="#home" class="lang-text" data-fa="خانه" data-en="Home" data-ar="الرئيسية">خانه</a>
@@ -1869,18 +2090,40 @@
         });
 
         // Mobile Menu Toggle
-        document.querySelector('.mobile-menu-btn').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-            document.body.classList.toggle('menu-open');
-        });
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const navMenu = document.querySelector('.nav-links');
+        const menuBackdrop = document.getElementById('menuBackdrop');
 
-        // Close mobile menu when clicking on a link
-        document.querySelectorAll('.nav-links a').forEach(link => {
-            link.addEventListener('click', () => {
-                document.querySelector('.nav-links').classList.remove('active');
-                document.body.classList.remove('menu-open');
+        function closeMobileMenu() {
+            navMenu.classList.remove('active');
+            menuBackdrop.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+
+        if (mobileMenuBtn && navMenu && menuBackdrop) {
+            mobileMenuBtn.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const open = navMenu.classList.toggle('active');
+                menuBackdrop.classList.toggle('active', open);
+                document.body.classList.toggle('menu-open', open);
             });
-        });
+
+            menuBackdrop.addEventListener('click', closeMobileMenu);
+
+            navMenu.addEventListener('click', (event) => {
+                event.stopPropagation();
+            });
+
+            document.querySelectorAll('.nav-links a').forEach(link => {
+                link.addEventListener('click', closeMobileMenu);
+            });
+
+            window.addEventListener('resize', () => {
+                if (window.innerWidth > 992) {
+                    closeMobileMenu();
+                }
+            });
+        }
 
         // Language Switcher - Fixed for English layout
         const savedLang = localStorage.getItem('lang') || 'fa';
@@ -1889,16 +2132,6 @@
             document.documentElement.lang = lang;
             document.documentElement.dir = lang === 'en' ? 'ltr' : 'rtl';
             document.body.dir = document.documentElement.dir;
-
-            // Adjust language switch position for English
-            const langSwitch = document.querySelector('.lang-switch');
-            if (lang === 'en') {
-                langSwitch.style.marginRight = '1rem';
-                langSwitch.style.marginLeft = '0';
-            } else {
-                langSwitch.style.marginRight = '0';
-                langSwitch.style.marginLeft = '1rem';
-            }
 
             // Update active language button
             document.querySelectorAll('[data-lang]').forEach(btn => {
@@ -1938,19 +2171,8 @@
         // Initialize language
         setLanguage(savedLang);
 
-        // Form Submission
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-
-            const successMessages = {
-                'fa': 'پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.',
-                'en': 'Your message has been sent successfully! We will contact you soon.',
-                'ar': 'تم إرسال رسالتك بنجاح! سنتواصل معك قريبًا.'
-            };
-
-            alert(successMessages[savedLang]);
-            this.reset();
-        });
+        const contactForm = document.getElementById('contactForm');
+        const formStatus = document.getElementById('formStatus');
 
         // Initialize Embla Carousel for clients section
         const emblaNode = document.querySelector(".embla__viewport");
@@ -2015,46 +2237,66 @@
                 }
             });
         });
-    </script>
-    <script>
-     
-       document.getElementById('contactForm').addEventListener('submit', async function(e) {
-    e.preventDefault();
+        if (contactForm) {
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
 
-    const formData = {
-        name: this.elements.name.value,
-        email: this.elements.email.value,
-        phone: this.elements.phone.value,
-        stone_type: this.elements.stone_type.value,
-        message: this.elements.message.value
-    };
+                const activeLang = localStorage.getItem('lang') || 'fa';
+                const messages = {
+                    loading: {
+                        fa: 'در حال ارسال پیام...',
+                        en: 'Sending your message...',
+                        ar: 'جاري إرسال رسالتك...'
+                    },
+                    success: {
+                        fa: 'پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.',
+                        en: 'Your message has been sent successfully! We will contact you soon.',
+                        ar: 'تم إرسال رسالتك بنجاح! سنتواصل معك قريبًا.'
+                    },
+                    error: {
+                        fa: 'ارسال پیام ناموفق بود. لطفاً دوباره تلاش کنید.',
+                        en: 'Sending failed. Please try again.',
+                        ar: 'فشل إرسال الرسالة. يرجى المحاولة مرة أخرى.'
+                    }
+                };
 
-    try {
-        const response = await fetch('/send-message', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(formData)
-        });
+                formStatus.style.color = 'var(--text-secondary)';
+                formStatus.textContent = messages.loading[activeLang];
 
-        const result = await response.json();
+                const payload = {
+                    name: this.elements.name.value.trim(),
+                    email: this.elements.email.value.trim(),
+                    phone: this.elements.phone.value.trim(),
+                    stone_type: this.elements.stone_type.value,
+                    message: this.elements.message.value.trim(),
+                    _subject: 'New message from ehsnestone.com contact form'
+                };
 
-        if (result.success) {
-            const successMessages = {
-                'fa': 'پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.',
-                'en': 'Your message has been sent successfully! We will contact you soon.',
-                'ar': 'تم إرسال رسالتک بنجاح! سنتواصل معك قريبًا.'
-            };
-            alert(successMessages[savedLang]);
-            this.reset();
-        } else {
-            alert(result.message || 'خطا در ارسال پیام. لطفا دوباره تلاش کنید.');
+                try {
+                    const response = await fetch(this.action, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            'Accept': 'application/json'
+                        },
+                        body: JSON.stringify(payload)
+                    });
+
+                    const result = await response.json();
+
+                    if (!response.ok || !result.success) {
+                        throw new Error(result.message || 'Request failed');
+                    }
+
+                    this.reset();
+                    formStatus.textContent = messages.success[activeLang];
+                    formStatus.style.color = '#9CFF9C';
+                } catch (error) {
+                    formStatus.textContent = messages.error[activeLang];
+                    formStatus.style.color = '#ff9c9c';
+                }
+            });
         }
-    } catch (error) {
-        alert('خطا در اتصال به سرور. لطفا دوباره تلاش کنید.');
-    }
-});
     </script>
 </body>
 </html>
