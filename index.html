@@ -1200,6 +1200,36 @@
     align-items: center;
 }
 
+
+#about .about-media-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+#about .about-media-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+#about .about-media-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+}
+
+#about .about-media-card p {
+    font-size: 0.88rem;
+    line-height: 1.8;
+    padding: 0.7rem 0.85rem 0.9rem;
+    color: var(--text-secondary);
+    text-align: right;
+}
+
 /* Mobile Fix */
 @media (max-width: 768px) {
     #about .about-grid {
@@ -1219,6 +1249,15 @@
         width: 100%;
         height: auto;
         border-radius: 16px;
+    }
+
+    #about .about-media-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    #about .about-media-card img {
+        height: 150px;
     }
 
     #about p {
@@ -1332,18 +1371,29 @@
                 <div class="divider"></div>
                 <p class="section-subtitle lang-text"
                    data-fa="سنگ احسان - پیشرو در صنعت سنگ طبیعی با بیش از دو دهه تجربه"
-                   data-en="Ehasnestone - Leader in natural stone industry with over two decades of experience"
+                   data-en="Ehsanstone - Leader in the natural stone industry with over two decades of experience"
                    data-ar="إحسان ستون - رائد في صناعة الحجر الطبيعي مع أكثر من عقدين من الخبرة"></p>
             </div>
 
             <div class="grid about-grid" style="grid-template-columns: 1fr 1fr; align-items: center; gap: 4rem;">
                 <div data-aos="fade-right">
-                    <img src="about-image.jpg" alt="درباره سنگ احسان" >
+                    <img src="IMG_5781.jpg" alt="درباره سنگ احسان">
+
+                    <div class="about-media-grid">
+                        <div class="about-media-card">
+                            <img src="carrara-marble.jpg" alt="سنگ مرمر کارارا">
+                            <p class="lang-text" data-fa="مرمر کارارا؛ بافت لطیف و درخشش طبیعی برای فضاهای لوکس." data-en="Carrara marble: soft texture and natural shine for luxury spaces." data-ar="رخام كرارا: ملمس ناعم ولمعان طبيعي للمساحات الفاخرة.">مرمر کارارا؛ بافت لطیف و درخشش طبیعی برای فضاهای لوکس.</p>
+                        </div>
+                        <div class="about-media-card">
+                            <img src="black-galaxy.jpg" alt="سنگ بلک گلکسی">
+                            <p class="lang-text" data-fa="بلک گلکسی؛ مقاوم و چشمگیر، مناسب نما و دکوراسیون مدرن." data-en="Black Galaxy: durable and striking, ideal for façades and modern interiors." data-ar="بلاك جالاكسي: متين ولافت، مناسب للواجهات والديكور العصري.">بلک گلکسی؛ مقاوم و چشمگیر، مناسب نما و دکوراسیون مدرن.</p>
+                        </div>
+                    </div>
                 </div>
                 <div data-aos="fade-left">
                     <p class="lang-text"
                        data-fa="شرکت سنگ احسان با بیش از دو دهه تجربه در زمینه استخراج، فراوری و صادرات سنگ‌های طبیعی لوکس، یکی از پیشروان صنعت سنگ ایران است. ما با بهره‌گیری از جدیدترین فناوری‌ها و استانداردهای بین‌المللی، محصولاتی با کیفیت برتر را به بازارهای جهانی عرضه می‌کنیم."
-                       data-en="Ehasnestone Company, with over two decades of experience in extraction, processing and export of luxury natural stones, is one of the leaders in Iran's stone industry. Using the latest technologies and international standards, we offer premium quality products to global markets."
+                       data-en="Ehsanstone Company, with over two decades of experience in extracting, processing, and exporting luxury natural stones, is one of the leaders in Iran's stone industry. Using the latest technologies and international standards, we deliver premium-quality products to global markets."
                        data-ar="شركة إحسان ستون، مع أكثر من عقدين من الخبرة في استخراج ومعالجة وتصدير الأحجار الطبيعية الفاخرة، هي واحدة من الرواد في صناعة الحجر في إيران. باستخدام أحدث التقنيات والمعايير الدولية، نقدم منتجات ذات جودة عالية للأسواق العالمية."></p>
 
                     <div class="stats">
